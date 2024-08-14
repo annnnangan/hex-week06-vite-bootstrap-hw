@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-419a4e8f.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-f5912a21.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg my-8">
+  <div class="container d-flex align-items-cente">
+    <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="text-dark navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form role="search">
+        <div class="form-control d-flex align-items-center search">
+          <input
+            class="border-0 bg-transparent"
+            type="search"
+            aria-label="Search"
+            placeholder="搜尋文章"
+          />
+
+          <i class="bi bi-search text-accent-200"></i>
+        </div>
+      </form>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <li class="nav-item">
+          <a class="nav-link py-2 px-5 me-5" href="#">所有文章</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-2 px-5 me-5" href="#">訂閱方案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-2 px-5 me-5" href="#">關於我們</a>
+        </li>
+        <li>
+          <a href="#"
+            ><button class="btn btn-lg btn-accent-200 text-white">
+              <h6 class="line-height-sm">登入 / 註冊</h6>
+            </button></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <hr />
+</div>
+
+    <!-- Hero -->
+    <div class="hero container pb-lg-11 pt-0">
+      <div class="position-relative">
+        <picture>
+          <!-- 當螢幕寬度少於600px時，替換圖片 -->
+          <source
+            srcset="/hex-week06-vite-bootstrap-hw/assets/banner-sm-1a33f8cf.png "
+            class="w-100"
+            media="(max-width: 768px)"
+          />
+          <!-- 預設圖片，通常是桌面版本 -->
+          <img
+            src="/hex-week06-vite-bootstrap-hw/assets/banner-ff141a3d.png"
+            class="w-100"
+            alt="hero banner"
+          />
+        </picture>
+
+        <div class="position-absolute hero-text">
+          <h5 class="mb-3 text-white">獻給新世代的生活風格誌</h5>
+          <h2 class="fs-1 fw-bold mb-6 text-white">一起探索生活的無限可能</h2>
+          <a href=""
+            ><button class="btn btn-lg bg-accent-200 text-white">
+              馬上訂閱 <i class="bi bi-arrow-right ms-3"></i></button
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Theme -->
+    <div class="theme container py-md-11 py-10">
+      <h2 class="fw-bold">熱門主題</h2>
+      <div class="row mt-6 g-2 g-lg-4">
+        <!-- 城市漫遊者 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-1-sm-e28ce55e.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-1-c3f2428d.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">城市漫遊者</h5>
+          </a>
+        </div>
+        <!-- 秘境尋蹤人 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-2-sm-03d78e75.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-2-6a361920.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">秘境尋蹤人</h5>
+          </a>
+        </div>
+        <!-- 品味設計家 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-3-sm-65d802c3.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-3-b39e8856.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">品味設計家</h5>
+          </a>
+        </div>
+        <!-- 美食探險記 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-4-sm-402e892b.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-4-ce962716.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">美食探險記</h5>
+          </a>
+        </div>
+        <!-- 美學建築誌 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-5-sm-2123bacc.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-5-f68e2e55.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">美學建築誌</h5>
+          </a>
+        </div>
+        <!-- 慢活生活行 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-6-sm-0dfc8cb3.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-6-3688ebf7.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">慢活生活行</h5>
+          </a>
+        </div>
+        <!-- 工藝匠心賞 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-7-sm-fed41742.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-7-82f2b629.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">工藝匠心賞</h5>
+          </a>
+        </div>
+        <!-- 時尚先鋒派 -->
+        <div class="col-lg-3 col-md-6">
+          <a href="#" class="theme-card position-relative d-block">
+            <picture>
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/theme-8-sm-0e3e7b41.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/theme-8-88f0cd69.png"
+                class="w-100"
+                alt="hero banner"
+              />
+            </picture>
+            <h5 class="theme-text text-white position-absolute">時尚先鋒派</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="blog container py-md-11 py-10 position-relative">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="fw-bold mb-6">精選文章</h2>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper blogSwiper col-md-8">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="blog-card card align-items-start pb-6 h-100">
+                <picture class="card-img-top">
+                  <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                  <source
+                    srcset="/hex-week06-vite-bootstrap-hw/assets/articles-1-sm-203688b1.png "
+                    class="w-100"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- 預設圖片，通常是桌面版本 -->
+                  <img
+                    src="/hex-week06-vite-bootstrap-hw/assets/articles-1-ebc46e31.png"
+                    class="w-100"
+                    alt="article image"
+                  />
+                </picture>
+
+                <div class="card-body text-start px-0">
+                  <h5 class="fw-bold mb-2">私人島嶼的露營奇遇記</h5>
+                  <p class="fs-6 text-neutral-400">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                  </p>
+                </div>
+
+                <div
+                  class="card-bottom d-flex align-items-center w-100 justify-content-between"
+                >
+                  <div class="text-accent-200 fs-5 eng-font">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="blog-card card align-items-start pb-6 h-100">
+                <picture class="card-img-top">
+                  <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                  <source
+                    srcset="/hex-week06-vite-bootstrap-hw/assets/articles-2-sm-30531557.png "
+                    class="w-100"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- 預設圖片，通常是桌面版本 -->
+                  <img
+                    src="/hex-week06-vite-bootstrap-hw/assets/articles-2-05d8b79f.png"
+                    class="w-100"
+                    alt="article image"
+                  />
+                </picture>
+
+                <div class="card-body text-start px-0">
+                  <h5 class="fw-bold mb-2">窺探米其林三星主廚的絕密手藝</h5>
+                  <p class="fs-6 text-neutral-400">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                  </p>
+                </div>
+
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center"
+                >
+                  <p class="text-accent-200 eng-font fs-5">Read More</p>
+                  <p class="badges badges-member">會員專屬</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="blog-card card align-items-start pb-6 h-100">
+                <picture class="card-img-top">
+                  <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                  <source
+                    srcset="/hex-week06-vite-bootstrap-hw/assets/articles-1-sm-203688b1.png "
+                    class="w-100"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- 預設圖片，通常是桌面版本 -->
+                  <img
+                    src="/hex-week06-vite-bootstrap-hw/assets/articles-1-ebc46e31.png"
+                    class="w-100"
+                    alt="article image"
+                  />
+                </picture>
+
+                <div class="card-body text-start px-0">
+                  <h5 class="fw-bold mb-2">私人島嶼的露營奇遇記</h5>
+                  <p class="fs-6 text-neutral-400">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                  </p>
+                </div>
+
+                <div
+                  class="card-bottom d-flex align-items-center w-100 justify-content-between"
+                >
+                  <div class="text-accent-200 fs-5 eng-font">Read More</div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="blog-card card align-items-start pb-6 h-100">
+                <picture class="card-img-top">
+                  <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                  <source
+                    srcset="/hex-week06-vite-bootstrap-hw/assets/articles-2-sm-30531557.png "
+                    class="w-100"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- 預設圖片，通常是桌面版本 -->
+                  <img
+                    src="/hex-week06-vite-bootstrap-hw/assets/articles-2-05d8b79f.png"
+                    class="w-100"
+                    alt="article image"
+                  />
+                </picture>
+
+                <div class="card-body text-start px-0">
+                  <h5 class="fw-bold mb-2">窺探米其林三星主廚的絕密手藝</h5>
+                  <p class="fs-6 text-neutral-400">
+                    在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...
+                  </p>
+                </div>
+
+                <div
+                  class="d-flex w-100 justify-content-between align-items-center"
+                >
+                  <p class="text-accent-200 eng-font fs-5">Read More</p>
+                  <p class="badges badges-member">會員專屬</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="blog-card card align-items-start pb-6 h-100">
+                <picture class="card-img-top">
+                  <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                  <source
+                    srcset="/hex-week06-vite-bootstrap-hw/assets/articles-1-sm-203688b1.png "
+                    class="w-100"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- 預設圖片，通常是桌面版本 -->
+                  <img
+                    src="/hex-week06-vite-bootstrap-hw/assets/articles-1-ebc46e31.png"
+                    class="w-100"
+                    alt="article image"
+                  />
+                </picture>
+
+                <div class="card-body text-start px-0">
+                  <h5 class="fw-bold mb-2">私人島嶼的露營奇遇記</h5>
+                  <p class="fs-6 text-neutral-400">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                  </p>
+                </div>
+
+                <div
+                  class="card-bottom d-flex align-items-center w-100 justify-content-between"
+                >
+                  <div class="text-accent-200 fs-5 eng-font">Read More</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-control position-absolute">
+        <div class="swiper-blog-pagination eng-font fw-normal d-flex"></div>
+        <div class="swiper-buttons d-flex">
+          <div class="swiper-button-blog-prev me-4">
+            <svg
+              width="56"
+              height="32"
+              viewBox="0 0 56 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="55"
+                height="31"
+                rx="15.5"
+                stroke="#6C757D"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M38.4999 16.0002C38.4999 15.8013 38.4209 15.6105 38.2802 15.4699C38.1396 15.3292 37.9488 15.2502 37.7499 15.2502H20.0604L24.7809 10.5312C24.8506 10.4615 24.9059 10.3787 24.9437 10.2876C24.9814 10.1965 25.0008 10.0988 25.0008 10.0002C25.0008 9.9016 24.9814 9.80395 24.9437 9.71284C24.9059 9.62173 24.8506 9.53895 24.7809 9.46921C24.7111 9.39948 24.6284 9.34417 24.5373 9.30643C24.4461 9.26869 24.3485 9.24927 24.2499 9.24927C24.1513 9.24927 24.0536 9.26869 23.9625 9.30643C23.8714 9.34417 23.7886 9.39948 23.7189 9.46921L17.7189 15.4692C17.649 15.5389 17.5936 15.6216 17.5558 15.7128C17.518 15.8039 17.4985 15.9016 17.4985 16.0002C17.4985 16.0989 17.518 16.1965 17.5558 16.2877C17.5936 16.3788 17.649 16.4615 17.7189 16.5312L23.7189 22.5312C23.7886 22.6009 23.8714 22.6563 23.9625 22.694C24.0536 22.7317 24.1513 22.7512 24.2499 22.7512C24.3485 22.7512 24.4461 22.7317 24.5373 22.694C24.6284 22.6563 24.7111 22.6009 24.7809 22.5312C24.8506 22.4615 24.9059 22.3787 24.9437 22.2876C24.9814 22.1965 25.0008 22.0988 25.0008 22.0002C25.0008 21.9016 24.9814 21.8039 24.9437 21.7128C24.9059 21.6217 24.8506 21.5389 24.7809 21.4692L20.0604 16.7502H37.7499C37.9488 16.7502 38.1396 16.6712 38.2802 16.5305C38.4209 16.3899 38.4999 16.1991 38.4999 16.0002Z"
+                fill="#6C757D"
+              />
+            </svg>
+          </div>
+          <div class="swiper-button-divider me-4">
+            <svg
+              width="80"
+              height="1"
+              viewBox="0 0 80 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="0.5" x2="80" y2="0.5" stroke="#6C757D" />
+            </svg>
+          </div>
+          <div class="swiper-button-blog-next">
+            <svg
+              width="56"
+              height="32"
+              viewBox="0 0 56 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="55"
+                height="31"
+                rx="15.5"
+                stroke="#6C757D"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17.5 16.0002C17.5 15.8013 17.579 15.6105 17.7197 15.4699C17.8603 15.3292 18.0511 15.2502 18.25 15.2502H35.9395L31.219 10.5312C31.0782 10.3904 30.9991 10.1994 30.9991 10.0002C30.9991 9.80105 31.0782 9.61004 31.219 9.46921C31.3598 9.32838 31.5508 9.24927 31.75 9.24927C31.9492 9.24927 32.1402 9.32838 32.281 9.46921L38.281 15.4692C38.3508 15.5389 38.4063 15.6216 38.4441 15.7128C38.4819 15.8039 38.5013 15.9016 38.5013 16.0002C38.5013 16.0989 38.4819 16.1965 38.4441 16.2877C38.4063 16.3788 38.3508 16.4615 38.281 16.5312L32.281 22.5312C32.1402 22.672 31.9492 22.7512 31.75 22.7512C31.5508 22.7512 31.3598 22.672 31.219 22.5312C31.0782 22.3904 30.9991 22.1994 30.9991 22.0002C30.9991 21.8011 31.0782 21.61 31.219 21.4692L35.9395 16.7502H18.25C18.0511 16.7502 17.8603 16.6712 17.7197 16.5305C17.579 16.3899 17.5 16.1991 17.5 16.0002Z"
+                fill="#6C757D"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
+  </body>
+</html>
