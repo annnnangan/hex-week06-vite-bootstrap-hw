@@ -1,3 +1,77 @@
-.index-title {
-  font-size: 100px;
+.hero {
+  @include media-breakpoint-down(sm) {
+    padding: 0px;
+  }
+  .hero-text {
+    text-align: center;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+      top: 55%;
+      left: 0;
+      margin-left: 60px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.theme-card {
+  border-radius: 20px 0px 20px 0px;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px #6e6b6714;
+
+  .theme-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  picture {
+    transition: 1s;
+  }
+
+  &:hover picture {
+    filter: brightness(0.7);
+    transition: 1s;
+  }
+}
+
+.blog {
+  .blog-card {
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid $neutral-500;
+  }
+
+  .swiper-control {
+    width: calc(100% - 24px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-up(md) {
+      bottom: 0;
+      left: 0;
+      transform: translateX(50%);
+    }
+  }
+
+  .swiper-blog-pagination {
+    letter-spacing: 0.5rem;
+    color: $neutral-300;
+    .swiper-pagination-current {
+      color: $neutral-500;
+    }
+    .swiper-pagination-total {
+      color: $neutral-500;
+    }
+  }
 }

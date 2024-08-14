@@ -484,8 +484,8 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align: null !default;
-$body-color: $gray-900 !default;
-$body-bg: $white !default;
+$body-color: $neutral-500 !default;
+$body-bg: $primary-100 !default;
 
 $body-secondary-color: rgba($body-color, 0.75) !default;
 $body-secondary-bg: $gray-200 !default;
@@ -521,7 +521,7 @@ $icon-link-icon-transform: translate3d(0.25em, 0, 0) !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 0; //1rem !default;
 
 // Grid breakpoints
 //
@@ -648,8 +648,8 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-  "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+$font-family-sans-serif: "Noto Serif TC", system-ui, -apple-system, "Segoe UI",
+  Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
@@ -672,10 +672,10 @@ $font-weight-semibold: 600 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: bolder !default;
 
-$font-weight-base: $font-weight-normal !default;
+$font-weight-base: 700; //$font-weight-normal !default;
 
 $line-height-base: 1.5 !default;
-$line-height-sm: 1.25 !default;
+$line-height-sm: 1.2; //1.25 !default;
 $line-height-lg: 2 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
@@ -698,7 +698,7 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom: $spacer * 0.5 !default;
+$headings-margin-bottom: 0; //$spacer * 0.5 !default;
 $headings-font-family: null !default;
 $headings-font-style: null !default;
 $headings-font-weight: 500 !default;
@@ -853,12 +853,12 @@ $input-btn-focus-color: $focus-ring-color !default;
 $input-btn-focus-blur: $focus-ring-blur !default;
 $input-btn-focus-box-shadow: $focus-ring-box-shadow !default;
 
-$input-btn-padding-y-sm: 0.25rem !default;
-$input-btn-padding-x-sm: 0.5rem !default;
+$input-btn-padding-y-sm: 0.75rem; //0.25rem !default;
+$input-btn-padding-x-sm: 1.25rem; //0.5rem !default;
 $input-btn-font-size-sm: $font-size-sm !default;
 
-$input-btn-padding-y-lg: 0.5rem !default;
-$input-btn-padding-x-lg: 1rem !default;
+$input-btn-padding-y-lg: 1rem; //0.5rem !default;
+$input-btn-padding-x-lg: 1.5rem; //1rem !default;
 $input-btn-font-size-lg: $font-size-lg !default;
 
 $input-btn-border-width: var(--#{$prefix}border-width) !default;
@@ -874,7 +874,7 @@ $btn-padding-y: $input-btn-padding-y !default;
 $btn-padding-x: $input-btn-padding-x !default;
 $btn-font-family: $input-btn-font-family !default;
 $btn-font-size: $input-btn-font-size !default;
-$btn-line-height: $input-btn-line-height !default;
+$btn-line-height: 1.2; //$input-btn-line-height !default;
 $btn-white-space: null !default; // Set to `nowrap` to prevent text wrapping
 
 $btn-padding-y-sm: $input-btn-padding-y-sm !default;
@@ -903,8 +903,8 @@ $btn-link-focus-shadow-rgb: to-rgb(
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius: var(--#{$prefix}border-radius) !default;
-$btn-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
-$btn-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
+$btn-border-radius-sm: 100px; //var(--#{$prefix}border-radius-sm) !default;
+$btn-border-radius-lg: 100px; //var(--#{$prefix}border-radius-lg) !default;
 
 $btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;

@@ -1,0 +1,28 @@
+.eng-font {
+  font-family: "Newsreader", serif;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.1em;
+}
+
+p {
+  letter-spacing: 0.05em;
+}
+
+@mixin hide-text {
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

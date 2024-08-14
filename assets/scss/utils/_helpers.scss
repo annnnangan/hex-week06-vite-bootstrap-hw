@@ -1,0 +1,9 @@
+.badges {
+  border-radius: $border-radius-sm;
+  padding: 4px 8px;
+
+  &.badges-member {
+    background-color: $primary-300;
+    color: $primary-400;
+  }
+}
