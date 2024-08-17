@@ -9,8 +9,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-09f991b3.js"></script>
-    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-d5f3bf1e.css">
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-db0771c1.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-b5a6a5c5.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg my-8">
@@ -269,7 +269,7 @@
           <h2 class="fw-bold mb-6">精選文章</h2>
         </div>
 
-        <!-- Slider main container -->
+        <!-- Blog Slider -->
         <div class="swiper blogSwiper col-md-8">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -331,7 +331,7 @@
                   class="d-flex w-100 justify-content-between align-items-center"
                 >
                   <p class="text-accent-200 eng-font fs-5">Read More</p>
-                  <p class="badges badges-member">會員專屬</p>
+                  <p class="badges">會員專屬</p>
                 </div>
               </a>
             </div>
@@ -503,6 +503,889 @@
 
     <div class="special-offer py-md-11 py-10 container">
       <h2 class="fw-bold mb-6">家庭訂閱方案限時 7 折</h2>
+    </div>
+
+    <!-- Hot Topic -->
+
+    <div class="hot-topic container py-md-11 py-10">
+      <h2 class="fw-bold mb-6">大家都在看</h2>
+      <!-- Desktop Tab Version-->
+      <div class="row hot-topic-row">
+        <!--Hot Topic List Group -->
+        <div class="hot-topic-list col-md-3">
+          <div
+            class="list-group h-100 bg-white p-lg-6 p-md-3"
+            id="list-tab"
+            role="tablist"
+          >
+            <a
+              class="list-group-item fs-md-7 fs-lg-6 list-group-item-action active mb-lg-6 mb-md-2 p-lg-4 p-md-2"
+              id="list-home-list"
+              data-bs-toggle="list"
+              href="#list-alcohol-map"
+              role="tab"
+              aria-controls="list-alcohol-map-list"
+              >酒精路跑地圖</a
+            >
+            <a
+              class="list-group-item fs-md-7 fs-lg-6 list-group-item-action mb-lg-6 mb-md-2 p-lg-4 p-md-2"
+              id="list-profile-list"
+              data-bs-toggle="list"
+              href="#list-ramen-map"
+              role="tab"
+              aria-controls="list-ramen-map-list"
+              >台北拉麵圖鑑</a
+            >
+            <a
+              class="list-group-item fs-md-7 fs-lg-6 list-group-item-action mb-lg-6 mb-md-2 p-lg-4 p-md-2"
+              id="list-messages-list"
+              data-bs-toggle="list"
+              href="#list-island-travel"
+              role="tab"
+              aria-controls="list-island-travel-list"
+              >海島自由行</a
+            >
+            <a
+              class="list-group-item fs-md-7 fs-lg-6 list-group-item-action mb-lg-6 mb-md-2 p-lg-4 p-md-2"
+              id="list-settings-list"
+              data-bs-toggle="list"
+              href="#list-travel-recommendation"
+              role="tab"
+              aria-controls="list-travel-recommendation-list"
+              >短天數出國推薦</a
+            >
+            <a
+              class="list-group-item fs-md-7 fs-lg-6 list-group-item-action mb-lg-6 mb-md-2 p-lg-4 p-md-2"
+              id="list-settings-list"
+              data-bs-toggle="list"
+              href="#list-weekend-camping"
+              role="tab"
+              aria-controls="list-weekend-camping-list"
+              >週末露營趣
+            </a>
+          </div>
+        </div>
+        <!--Hot Topic Details-->
+        <div class="hot-topic-details col-md-9">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active p-lg-9 p-md-6 bg-white"
+              id="list-alcohol-map"
+              role="tabpanel"
+              aria-labelledby="list-alcohol-map-list"
+            >
+              <div>
+                <!-- Details Text -->
+                <div class="mb-4 p-lg-6 p-md-4">
+                  <h3 class="fs-4 text-accent-200 mb-6 fw-bolder">
+                    酒精路跑地圖
+                  </h3>
+                  <ul class="highlight ps-3 mb-0">
+                    <li class="mb-5 text-truncate">
+                      <p>城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+                    </li>
+                    <li class="mb-5">
+                      <p class="text-truncate">
+                        你要的調酒師在這裡！五月全台酒吧客座活動整理
+                      </p>
+                    </li>
+                    <li>
+                      <p class="text-truncate">
+                        台南老宅手工酒藏,尋味百年人文釀意
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Details Image -->
+                <div class="highlight-images d-flex mb-4">
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-1-sm-d41ead80.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-1-4140643e.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-2-sm-e66a826f.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-2-0511cb4f.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-3-sm-5ceb5458.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-3-1a547610.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-4-sm-9226d072.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-4-ec19ac92.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                </div>
+
+                <!-- Details Hashtag & CTA -->
+                <div class="p-lg-6 p-md-4 d-flex justify-content-between">
+                  <div class="d-flex">
+                    <p class="badges me-4">#夜貓行程</p>
+                    <p class="badges me-4">#barhopping</p>
+                    <p class="badges me-4">#全台酒吧</p>
+                  </div>
+
+                  <a class="eng-font text-accent-200 fs-5 fw-bold" href="#"
+                    >View More <i class="align-middle bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade show p-lg-9 p-md-6 bg-white"
+              id="list-ramen-map"
+              role="tabpanel"
+              aria-labelledby="list-remen-map-list"
+            >
+              <div>
+                <!-- Details Text -->
+                <div class="mb-4 p-lg-6 p-md-4">
+                  <h3 class="fs-4 text-accent-200 mb-6 fw-bolder">
+                    台北拉麵圖鑑
+                  </h3>
+                  <ul class="highlight ps-3 mb-0">
+                    <li class="mb-5">城市酒吧人氣榜,盤點當紅熱門酒吧</li>
+                    <li class="mb-5">
+                      你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </li>
+                    <li>台南老宅手工酒藏,尋味百年人文釀意</li>
+                  </ul>
+                </div>
+
+                <!-- Details Image -->
+                <div class="highlight-images d-flex mb-4">
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-1-sm-d41ead80.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-1-4140643e.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-2-sm-e66a826f.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-2-0511cb4f.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-3-sm-5ceb5458.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-3-1a547610.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                  <picture>
+                    <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                    <source
+                      srcset="/hex-week06-vite-bootstrap-hw/assets/hots-4-sm-9226d072.png "
+                      class="w-100"
+                      media="(max-width: 768px)"
+                    />
+                    <!-- 預設圖片，通常是桌面版本 -->
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/hots-4-ec19ac92.png"
+                      class="w-100"
+                      alt="bar image"
+                    />
+                  </picture>
+                </div>
+
+                <!-- Details Hashtag & CTA -->
+                <div class="p-lg-6 p-md-4 d-flex justify-content-between">
+                  <div class="d-flex">
+                    <p class="badges me-4">#雞白湯</p>
+                    <p class="badges me-4">#拉麵</p>
+                    <p class="badges me-4">#台北美食</p>
+                  </div>
+
+                  <a class="eng-font text-accent-200 fs-5 fw-bold" href="#"
+                    >View More <i class="align-middle bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Swiper Version -->
+      <div class="swiper hotTopicSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="bg-white border-0 card align-items-start p-4 h-100"
+            >
+              <div class="card-body text-start p-0 w-100 mb-4">
+                <h5 class="fw-bold mb-3 text-accent-200">酒精路跑地圖</h5>
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-2">
+                    <p class="text-truncate">城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="text-truncate">
+                      你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-truncate">
+                      台南老宅手工酒藏,尋味百年人文釀意
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/hots-1-sm-d41ead80.png"
+                class="w-100 mb-4"
+                alt="article image"
+              />
+
+              <div class="card-bottom w-100">
+                <div class="d-flex mb-4 py-2">
+                  <p class="badges me-3 fs-7">#夜貓行程</p>
+                  <p class="badges me-3 fs-7">#barhopping</p>
+                  <p class="badges me-3 fs-7">#全台酒吧</p>
+                </div>
+
+                <p class="text-accent-200 fw-bold py-3 text-center">
+                  View More <i class="align-middle bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="bg-white border-0 card align-items-start p-4 h-100"
+            >
+              <div class="card-body text-start p-0 w-100 mb-4">
+                <h5 class="fw-bold mb-3 text-accent-200">台北拉麵圖鑑</h5>
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-2">
+                    <p class="text-truncate">城市酒吧人氣榜,盤點當紅熱門酒吧</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="text-truncate">
+                      你要的調酒師在這裡！五月全台酒吧客座活動整理
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-truncate">
+                      台南老宅手工酒藏,尋味百年人文釀意
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/hots-3-sm-5ceb5458.png"
+                class="w-100 mb-4"
+                alt="article image"
+              />
+
+              <div class="card-bottom w-100">
+                <div class="d-flex mb-4 py-2">
+                  <p class="badges me-3 fs-7">#雞白湯</p>
+                  <p class="badges me-3 fs-7">#拉麵</p>
+                  <p class="badges me-3 fs-7">#台北美食</p>
+                </div>
+
+                <p class="text-accent-200 fw-bold py-3 text-center">
+                  View More <i class="align-middle bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="bg-white border-0 card align-items-start p-4 h-100"
+            >
+              <div class="card-body text-start p-0 w-100 mb-4">
+                <h5 class="fw-bold mb-3 text-accent-200">海島自由行</h5>
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-2">
+                    <p class="text-truncate">
+                      私島慢活島嶼生活 - 在熱帶天堂品...
+                    </p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="text-truncate">
+                      海島漂流記 - 在陽光、沙灘和比基...
+                    </p>
+                  </li>
+                  <li>
+                    <p class="text-truncate">
+                      島嶼蹤跡 - 揭開加勒比海上世外桃...
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/hots-4-sm-9226d072.png"
+                class="w-100 mb-4"
+                alt="article image"
+              />
+
+              <div class="card-bottom w-100">
+                <div class="d-flex mb-4 py-2">
+                  <p class="badges me-3 fs-7">#熱帶國家</p>
+                  <p class="badges me-3 fs-7">#海邊</p>
+                  <p class="badges me-3 fs-7">#無敵海景</p>
+                </div>
+
+                <p class="text-accent-200 fw-bold py-3 text-center">
+                  View More <i class="align-middle bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="bg-white border-0 card align-items-start p-4 h-100"
+            >
+              <div class="card-body text-start p-0 w-100 mb-4">
+                <h5 class="fw-bold mb-3 text-accent-200">短天數出國推薦</h5>
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-2">
+                    <p class="text-truncate">72小時東京遊走 - 當個時尚東京通</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="text-truncate">48小時曼谷遊玩全攻略</p>
+                  </li>
+                  <li>
+                    <p class="text-truncate">三天兩夜賞櫻微醺東京</p>
+                  </li>
+                </ul>
+              </div>
+
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/hots-5-sm-42a757ac.png"
+                class="w-100 mb-4"
+                alt="article image"
+              />
+
+              <div class="card-bottom w-100">
+                <div class="d-flex mb-4 py-2">
+                  <p class="badges me-3 fs-7">#說走就走</p>
+                  <p class="badges me-3 fs-7">#出國玩</p>
+                  <p class="badges me-3 fs-7">#東亞</p>
+                </div>
+
+                <p class="text-accent-200 fw-bold py-3 text-center">
+                  View More <i class="align-middle bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a
+              href="#"
+              class="bg-white border-0 card align-items-start p-4 h-100"
+            >
+              <div class="card-body text-start p-0 w-100 mb-4">
+                <h5 class="fw-bold mb-3 text-accent-200">週末露營趣</h5>
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-2">
+                    <p class="text-truncate">週末說走就走露營記</p>
+                  </li>
+                  <li class="mb-2">
+                    <p class="text-truncate">城市野營日記</p>
+                  </li>
+                  <li>
+                    <p class="text-truncate">
+                      和寵物去露營 - 大自然之旅的雙倍...
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/hots-2-sm-e66a826f.png"
+                class="w-100 mb-4"
+                alt="article image"
+              />
+
+              <div class="card-bottom w-100">
+                <div class="d-flex mb-4 py-2">
+                  <p class="badges me-3 fs-7">#戶外</p>
+                  <p class="badges me-3 fs-7">#露營控</p>
+                  <p class="badges me-3 fs-7">#凹豆</p>
+                </div>
+
+                <p class="text-accent-200 fw-bold py-3 text-center">
+                  View More <i class="align-middle bi bi-arrow-right"></i>
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Life -->
+    <div class="life container py-md-11 py-10">
+      <div class="d-flex justify-content-between">
+        <h2 class="fw-bold mb-6">品味生活</h2>
+        <div class="swiper-control">
+          <div class="swiper-buttons d-flex">
+            <div class="swiper-button-life-prev me-4">
+              <svg
+                width="56"
+                height="32"
+                viewBox="0 0 56 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="55"
+                  height="31"
+                  rx="15.5"
+                  stroke="#6C757D"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M38.4999 16.0002C38.4999 15.8013 38.4209 15.6105 38.2802 15.4699C38.1396 15.3292 37.9488 15.2502 37.7499 15.2502H20.0604L24.7809 10.5312C24.8506 10.4615 24.9059 10.3787 24.9437 10.2876C24.9814 10.1965 25.0008 10.0988 25.0008 10.0002C25.0008 9.9016 24.9814 9.80395 24.9437 9.71284C24.9059 9.62173 24.8506 9.53895 24.7809 9.46921C24.7111 9.39948 24.6284 9.34417 24.5373 9.30643C24.4461 9.26869 24.3485 9.24927 24.2499 9.24927C24.1513 9.24927 24.0536 9.26869 23.9625 9.30643C23.8714 9.34417 23.7886 9.39948 23.7189 9.46921L17.7189 15.4692C17.649 15.5389 17.5936 15.6216 17.5558 15.7128C17.518 15.8039 17.4985 15.9016 17.4985 16.0002C17.4985 16.0989 17.518 16.1965 17.5558 16.2877C17.5936 16.3788 17.649 16.4615 17.7189 16.5312L23.7189 22.5312C23.7886 22.6009 23.8714 22.6563 23.9625 22.694C24.0536 22.7317 24.1513 22.7512 24.2499 22.7512C24.3485 22.7512 24.4461 22.7317 24.5373 22.694C24.6284 22.6563 24.7111 22.6009 24.7809 22.5312C24.8506 22.4615 24.9059 22.3787 24.9437 22.2876C24.9814 22.1965 25.0008 22.0988 25.0008 22.0002C25.0008 21.9016 24.9814 21.8039 24.9437 21.7128C24.9059 21.6217 24.8506 21.5389 24.7809 21.4692L20.0604 16.7502H37.7499C37.9488 16.7502 38.1396 16.6712 38.2802 16.5305C38.4209 16.3899 38.4999 16.1991 38.4999 16.0002Z"
+                  fill="#6C757D"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-divider me-4">
+              <svg
+                width="80"
+                height="1"
+                viewBox="0 0 80 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line y1="0.5" x2="80" y2="0.5" stroke="#6C757D" />
+              </svg>
+            </div>
+            <div class="swiper-button-life-next">
+              <svg
+                width="56"
+                height="32"
+                viewBox="0 0 56 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="55"
+                  height="31"
+                  rx="15.5"
+                  stroke="#6C757D"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.5 16.0002C17.5 15.8013 17.579 15.6105 17.7197 15.4699C17.8603 15.3292 18.0511 15.2502 18.25 15.2502H35.9395L31.219 10.5312C31.0782 10.3904 30.9991 10.1994 30.9991 10.0002C30.9991 9.80105 31.0782 9.61004 31.219 9.46921C31.3598 9.32838 31.5508 9.24927 31.75 9.24927C31.9492 9.24927 32.1402 9.32838 32.281 9.46921L38.281 15.4692C38.3508 15.5389 38.4063 15.6216 38.4441 15.7128C38.4819 15.8039 38.5013 15.9016 38.5013 16.0002C38.5013 16.0989 38.4819 16.1965 38.4441 16.2877C38.4063 16.3788 38.3508 16.4615 38.281 16.5312L32.281 22.5312C32.1402 22.672 31.9492 22.7512 31.75 22.7512C31.5508 22.7512 31.3598 22.672 31.219 22.5312C31.0782 22.3904 30.9991 22.1994 30.9991 22.0002C30.9991 21.8011 31.0782 21.61 31.219 21.4692L35.9395 16.7502H18.25C18.0511 16.7502 17.8603 16.6712 17.7197 16.5305C17.579 16.3899 17.5 16.1991 17.5 16.0002Z"
+                  fill="#6C757D"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Life Slider -->
+      <div class="swiper lifeSwiper">
+        <div class="swiper-wrapper">
+          <!-- 食 -->
+          <div class="swiper-slide">
+            <div class="card border-0 align-items-start pb-6 h-100">
+              <h3 class="text-primary-400 mb-7">食.</h3>
+              <picture class="card-img-top">
+                <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                <source
+                  srcset="/hex-week06-vite-bootstrap-hw/assets/life-1-sm-8a01f225.png "
+                  class="w-100"
+                  media="(max-width: 768px)"
+                />
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img
+                  src="/hex-week06-vite-bootstrap-hw/assets/life-1-dc3e4076.png"
+                  class="w-100"
+                  alt="card image"
+                />
+              </picture>
+
+              <div class="card-body text-start px-0">
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">米其林三星主廚的那些絕活傳奇</a>
+                    </p>
+                  </li>
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">探秘成都的地道川味秘技與魅力</a>
+                    </p>
+                  </li>
+
+                  <li class="accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">義大利釀酒師對於酒的堅持執著</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-100 d-flex align-items-center justify-content-center"
+              >
+                <p class="text-accent-200 eng-font fw-bold py-3 slide-up-hover">
+                  <a href="#"
+                    >View More <i class="align-middle bi bi-arrow-right"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 藝 -->
+          <div class="swiper-slide">
+            <div class="card border-0 align-items-start pb-6 h-100">
+              <h3 class="text-primary-400 mb-7">藝.</h3>
+              <picture class="card-img-top">
+                <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                <source
+                  srcset="/hex-week06-vite-bootstrap-hw/assets/life-2-sm-2f266476.png "
+                  class="w-100"
+                  media="(max-width: 768px)"
+                />
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img
+                  src="/hex-week06-vite-bootstrap-hw/assets/life-2-e0514e49.png"
+                  class="w-100"
+                  alt="card image"
+                />
+              </picture>
+
+              <div class="card-body text-start px-0">
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">解構教主級時裝設計大師的獨特美學</a>
+                    </p>
+                  </li>
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">當代攝影師鏡頭中的光影離奇</a>
+                    </p>
+                  </li>
+
+                  <li class="accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">帶你穿縮中世紀，夏季文藝復興展</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-100 d-flex align-items-center justify-content-center"
+              >
+                <p class="text-accent-200 eng-font fw-bold py-3 slide-up-hover">
+                  <a href="#"
+                    >View More <i class="align-middle bi bi-arrow-right"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 旅 -->
+          <div class="swiper-slide">
+            <div class="card border-0 align-items-start pb-6 h-100">
+              <h3 class="text-primary-400 mb-7">旅.</h3>
+              <picture class="card-img-top">
+                <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                <source
+                  srcset="/hex-week06-vite-bootstrap-hw/assets/life-3-sm-406b207e.png "
+                  class="w-100"
+                  media="(max-width: 768px)"
+                />
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img
+                  src="/hex-week06-vite-bootstrap-hw/assets/life-3-5b7bb55a.png"
+                  class="w-100"
+                  alt="card image"
+                />
+              </picture>
+
+              <div class="card-body text-start px-0">
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">遠離喧囂,偶探巴塔哥尼亞終界</a>
+                    </p>
+                  </li>
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">東京深度六區,帶你細品極簡魅力</a>
+                    </p>
+                  </li>
+
+                  <li class="accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">專賣奇珍異寶的東歐地下夜市</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-100 d-flex align-items-center justify-content-center"
+              >
+                <p class="text-accent-200 eng-font fw-bold py-3 slide-up-hover">
+                  <a href="#"
+                    >View More <i class="align-middle bi bi-arrow-right"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 藝 -->
+          <div class="swiper-slide">
+            <div class="card border-0 align-items-start pb-6 h-100">
+              <h3 class="text-primary-400 mb-7">藝.</h3>
+              <picture class="card-img-top">
+                <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                <source
+                  srcset="/hex-week06-vite-bootstrap-hw/assets/life-2-sm-2f266476.png "
+                  class="w-100"
+                  media="(max-width: 768px)"
+                />
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img
+                  src="/hex-week06-vite-bootstrap-hw/assets/life-2-e0514e49.png"
+                  class="w-100"
+                  alt="card image"
+                />
+              </picture>
+
+              <div class="card-body text-start px-0">
+                <ul class="highlight ps-3 mb-0">
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">解構教主級時裝設計大師的獨特美學</a>
+                    </p>
+                  </li>
+                  <li class="mb-5 accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">當代攝影師鏡頭中的光影離奇</a>
+                    </p>
+                  </li>
+
+                  <li class="accent-200-hover slide-up-hover">
+                    <p class="text-truncate">
+                      <a href="#">帶你穿縮中世紀，夏季文藝復興展</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="w-100 d-flex align-items-center justify-content-center"
+              >
+                <p class="text-accent-200 eng-font fw-bold py-3 slide-up-hover">
+                  <a href="#"
+                    >View More <i class="align-middle bi bi-arrow-right"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- project -->
+    <div class="project bg-primary-200 py-md-11 py-10">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-start"
+          >
+            <h5 class="text-muted fw-bolder mb-4">
+              今天又不知道要去哪裡了嗎？
+            </h5>
+            <h2 class="fw-bold mb-8">
+              <span>Vivre</span> 給你意想不到的生活風格提案
+            </h2>
+            <button
+              class="btn btn-accent-200 slide-up-hover text-white fw-bolder"
+            >
+              馬上訂閱 <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="projectSwiper col-lg-6">
+            <div class="swiper-wrapper row">
+              <div class="swiper-item card-item col-lg-6">
+                <div class="card border-0">
+                  <a href="#">
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/projects-2-28f2afc5.png"
+                      class="card-img"
+                      alt="親子露營要帶什麼？"
+                    />
+                    <div class="card-img-overlay text-primary-100">
+                      <div class="badges-white position-relative">
+                        <h6><i class="bi bi-caret-right-fill"></i>人氣行程</h6>
+                      </div>
+                      <div class="card-cta position-absolute">
+                        <h6
+                          class="slide-up-hover card-title d-flex justify-content-between align-items-center"
+                        >
+                          親子露營要帶什麼?
+                          <i class="bi bi-arrow-right"></i>
+                        </h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-item card-item col-lg-6">
+                <div class="card border-0">
+                  <a href="#">
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/projects-1-1192f106.png"
+                      class="card-img"
+                      alt="山女孩的健行筆記"
+                    />
+                    <div class="card-img-overlay text-primary-100">
+                      <div class="badges-white position-relative">
+                        <h6><i class="bi bi-caret-right-fill"></i>編輯推薦</h6>
+                      </div>
+                      <div class="card-cta position-absolute">
+                        <h6
+                          class="slide-up-hover card-title d-flex justify-content-between align-items-center"
+                        >
+                          山女孩的健行筆記
+                          <i class="bi bi-arrow-right"></i>
+                        </h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-item card-item col-lg-6">
+                <div class="card border-0">
+                  <a href="#">
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/projects-4-c31b35a0.png"
+                      class="card-img"
+                      alt="質感房間改造攻略！"
+                    />
+                    <div class="card-img-overlay text-primary-100">
+                      <div class="badges-white position-relative">
+                        <h6><i class="bi bi-caret-right-fill"></i>編輯推薦</h6>
+                      </div>
+                      <div class="card-cta position-absolute">
+                        <h6
+                          class="slide-up-hover card-title d-flex justify-content-between align-items-center"
+                        >
+                          質感房間改造攻略！
+                          <i class="bi bi-arrow-right"></i>
+                        </h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-item card-item col-lg-6">
+                <div class="card border-0">
+                  <a href="#">
+                    <img
+                      src="/hex-week06-vite-bootstrap-hw/assets/projects-3-6cd4e17c.png"
+                      class="card-img"
+                      alt="適合溜小孩的海邊景點推薦"
+                    />
+                    <div class="card-img-overlay text-primary-100">
+                      <div class="badges-white position-relative">
+                        <h6><i class="bi bi-caret-right-fill"></i>熱門文章</h6>
+                      </div>
+                      <div class="card-cta position-absolute">
+                        <h6
+                          class="slide-up-hover card-title d-flex justify-content-between align-items-center"
+                        >
+                          適合溜小孩的海邊景點推薦
+                          <i class="bi bi-arrow-right"></i>
+                        </h6>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Swiper JS -->
