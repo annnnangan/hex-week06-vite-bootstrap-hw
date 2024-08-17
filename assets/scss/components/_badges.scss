@@ -1,0 +1,18 @@
+.badges {
+  border-radius: $border-radius-sm;
+  padding: 4px 8px;
+  background-color: $primary-300;
+  color: $primary-400;
+  //when the size is larger than md
+  @include media-breakpoint-up(md) {
+    font-size: 12px;
+  }
+}
+
+.badges-white {
+  border-radius: $border-radius-sm;
+  color: $accent-300;
+  border: 1px solid #e0efde;
+  padding: 8px 12px;
+  background: #ffffff;
+}
