@@ -52,7 +52,7 @@ function createLifeSwiper() {
         autoplay: {
           delay: 5000,
         },
-
+        slidesPerGroup: 2,
         grabCursor: true,
         navigation: {
           nextEl: ".swiper-button-life-next",
@@ -66,6 +66,7 @@ function createLifeSwiper() {
         autoplay: {
           delay: 5000,
         },
+        slidesPerGroup: 3,
 
         grabCursor: true,
         navigation: {
