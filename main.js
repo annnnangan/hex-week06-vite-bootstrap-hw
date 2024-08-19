@@ -22,6 +22,7 @@ var blogSwiper = new Swiper(".blogSwiper", {
     768: {
       slidesPerView: 2,
       spaceBetween: 48,
+      slidesPerGroup: 2,
     },
   },
 });
@@ -126,6 +127,14 @@ function createProjectSwiper() {
     autoplay: {
       delay: 5000,
     },
+    breakpoints: {
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 48,
+        slidesPerGroup: 2,
+      },
+    },
   });
 }
 
@@ -136,18 +145,18 @@ const projectSwiperItem = document.querySelectorAll(
   ".project .swiper-wrapper .swiper-item"
 );
 function disableProjectSwiper() {
-  if (window.innerWidth >= 768) {
-    projectSwiperContainer.classList.remove("swiper");
-    createProjectSwiper();
+  if (window.innerWidth >= 992) {
     projectSwiperWrapper.classList.add("row");
+    projectSwiperContainer.classList.remove("swiper");
     projectSwiperItem.forEach((item) => {
       item.classList.add("card-item");
       item.classList.remove("swiper-slide");
     });
-  } else {
     if (projectSwiper) {
       projectSwiper.destroy();
     }
+  } else {
+    createProjectSwiper();
     projectSwiperContainer.classList.add("swiper");
     projectSwiperWrapper.classList.remove("row");
     projectSwiperItem.forEach((item) => {
