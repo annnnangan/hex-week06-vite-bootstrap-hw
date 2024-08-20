@@ -1,0 +1,55 @@
+.subscription-package {
+  .list-group-item {
+    color: $neutral-400;
+    background: transparent;
+    border-radius: 0;
+    &.active {
+      background-color: $accent-200;
+      color: white;
+    }
+  }
+
+  .tab-content {
+    h4,
+    h5,
+    li {
+      color: $neutral-400;
+    }
+  }
+
+  ul.benefits {
+    display: inline-block;
+    list-style-position: outside;
+    text-align: left;
+  }
+
+  .package-list {
+    .btn {
+      color: $neutral-400;
+    }
+    .package.active {
+      .filled-tick-list {
+        list-style-image: url("/assets/images/filled-tick-black.svg");
+      }
+
+      .benefits {
+        color: $neutral-500;
+        li {
+          color: $neutral-500;
+        }
+      }
+      .card {
+        border: 2px solid $accent-200;
+      }
+
+      .price {
+        color: $accent-200;
+      }
+
+      .btn {
+        background-color: $accent-200;
+        color: white;
+      }
+    }
+  }
+}

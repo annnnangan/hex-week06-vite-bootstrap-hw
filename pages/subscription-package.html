@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂閱頁</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="subscription-package">
+      <div class="container my-13">
+        <nav aria-label="breadcrumb mb-md-5 mb-2 fs-lg-6 fs-7">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item text-neutral-400">
+              <a href="#">首頁</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">訂閱方案</li>
+          </ol>
+        </nav>
+
+        <h2 class="fs-md-1 fs-3 fw-bolder mb-md-11 mb-9">訂閱方案</h2>
+
+        <div class="d-flex flex-column">
+          <div
+            class="list-group flex-row justify-content-center mb-6 mb-md-9"
+            id="list-tab"
+            role="tablist"
+          >
+            <a
+              class="list-group-item active py-3 px-12 text-center d-flex align-items-center me-md-6"
+              id="list-yearly-package-list"
+              data-bs-toggle="list"
+              href="#list-yearly-package"
+              role="tab"
+              aria-controls="list-yearly-package"
+              >年繳</a
+            >
+            <a
+              class="list-group-item py-3 px-12 text-center d-flex align-items-center"
+              id="list-monthly-package-list"
+              data-bs-toggle="list"
+              href="#list-monthly-package"
+              role="tab"
+              aria-controls="list-monthly-package"
+              >月繳</a
+            >
+          </div>
+
+          <div>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="list-yearly-package"
+                role="tabpanel"
+                aria-labelledby="list-yearly-package-list"
+              >
+                <ul class="row package-list justify-content-md-center">
+                  <!-- 輕量型 -->
+                  <li class="package list-unstyled col-lg-4 col-md-6">
+                    <div
+                      class="card text-center mb-3 bg-white p-6 p-md-9 h-100 d-flex flex-column"
+                    >
+                      <div
+                        class="card-body d-flex flex-column justify-content-between"
+                      >
+                        <div>
+                          <div class="card-title mb-md-11 mb-8">
+                            <h5 class="fw-bolder mb-4">輕量型</h5>
+                            <h4 class="fs-1 gurmukhi-font mb-md-9 mb-8">
+                              NT 99
+                              <span class="fw-bolder fs-4 eng-font">/ 月</span>
+                            </h4>
+                          </div>
+
+                          <ul
+                            class="filled-tick-list benefits d-flex flex-column align-items-start fs-6"
+                          >
+                            <li class="mb-6">每月最新文章無限閱讀</li>
+                            <li class="mb-6">專屬會員限定內容</li>
+                            <li class="mb-6">定期電子報</li>
+                          </ul>
+                        </div>
+
+                        <a
+                          href="#"
+                          class="btn w-100 rounded-pill btn-neutral-100 fw-bolder"
+                          >我要訂閱 <i class="bi bi-arrow-right ms-3"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- 玩咖型 -->
+                  <li class="package list-unstyled col-lg-4 col-md-6">
+                    <div
+                      class="card text-center mb-3 bg-white p-6 p-md-9 h-100 d-flex flex-column"
+                    >
+                      <div
+                        class="card-body d-flex flex-column justify-content-between"
+                      >
+                        <div>
+                          <div class="card-title mb-md-11 mb-8">
+                            <h5 class="fw-bolder mb-4">玩咖型</h5>
+                            <h4 class="fs-1 gurmukhi-font mb-md-9 mb-8">
+                              NT 159
+                              <span class="fw-bolder fs-4 eng-font">/ 月</span>
+                            </h4>
+                          </div>
+
+                          <ul
+                            class="filled-tick-list benefits d-flex flex-column align-items-start fs-6"
+                          >
+                            <li class="mb-6">每月最新文章無限閱讀</li>
+                            <li class="mb-6">專屬會員限定內容</li>
+                            <li class="mb-6">定期電子報</li>
+                            <li class="mb-6">年度精選禮物</li>
+                          </ul>
+                        </div>
+
+                        <a
+                          href="#"
+                          class="btn w-100 rounded-pill btn-neutral-100 fw-bolder"
+                          >我要訂閱 <i class="bi bi-arrow-right ms-3"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- 家庭型 -->
+                  <li
+                    class="package list-unstyled col-lg-4 col-md-6 mt-md-6 active"
+                  >
+                    <div
+                      class="card text-center mb-3 bg-white p-6 p-md-9 h-100 d-flex flex-column"
+                    >
+                      <div
+                        class="card-body d-flex flex-column justify-content-between"
+                      >
+                        <div>
+                          <div class="card-title mb-md-11 mb-8">
+                            <h5 class="fw-bolder mb-4">家庭型</h5>
+                            <h4 class="fs-1 gurmukhi-font price">
+                              NT 599
+                              <span class="fw-bolder fs-4 eng-font">/ 月</span>
+                            </h4>
+                            <p
+                              class="mb-md-9 mb-8 gurmukhi-font text-neutral-300"
+                            >
+                              <del>NT 899</del>
+                            </p>
+                          </div>
+
+                          <ul
+                            class="filled-tick-list benefits d-flex flex-column align-items-start fs-6 text-start"
+                          >
+                            <li class="mb-6">每月最新文章無限閱讀</li>
+                            <li class="mb-6">專屬會員限定內容</li>
+                            <li class="mb-6">定期電子報</li>
+                            <li class="mb-6">24/7 優先客戶服務</li>
+                            <li class="mb-6">為每個成員量身打造專屬行程</li>
+                            <li class="mb-6">最多 5 個家庭成員共享</li>
+                          </ul>
+                        </div>
+
+                        <a
+                          href="#"
+                          class="btn w-100 rounded-pill btn-neutral-100 fw-bolder"
+                          >我要訂閱 <i class="bi bi-arrow-right ms-3"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="list-monthly-package"
+                role="tabpanel"
+                aria-labelledby="list-monthly-package-list"
+              >
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script>
+      const packageList = document.querySelectorAll(".package");
+      packageList.forEach((item) => {
+        item.addEventListener("click", () => {
+          packageList.forEach((i) => i.classList.remove("active"));
+          item.classList.add("active");
+        });
+      });
+    </script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

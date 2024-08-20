@@ -8,3 +8,10 @@
     text-indent: 12px;
   }
 }
+
+.filled-tick-list {
+  list-style-image: url("/assets/images/filled-tick-grey.svg");
+  li {
+    text-indent: 8px;
+  }
+}
