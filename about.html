@@ -13,47 +13,62 @@
   <div class="container d-flex align-items-cente">
     <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
     <button
-      class="navbar-toggler border-0"
+      class="navbar-toggler d-lg-none"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
     >
-      <span class="text-dark navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon icon-24"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form role="search">
-        <div class="form-control d-flex align-items-center search">
-          <input
-            class="border-0 bg-transparent"
-            type="search"
-            aria-label="Search"
-            placeholder="搜尋文章"
-          />
 
-          <i class="bi bi-search text-accent-200"></i>
-        </div>
-      </form>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-        <li class="nav-item">
-          <a class="nav-link py-2 px-5 me-5" href="#">所有文章</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2 px-5 me-5" href="#">訂閱方案</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2 px-5 me-5" href="#">關於我們</a>
-        </li>
-        <li>
-          <a href="#"
-            ><button class="btn btn-lg btn-accent-200 text-white">
-              <h6 class="line-height-sm">登入 / 註冊</h6>
-            </button></a
-          >
-        </li>
-      </ul>
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <form role="search">
+          <div class="form-control d-flex align-items-center search">
+            <input
+              class="border-0 bg-transparent"
+              type="search"
+              aria-label="Search"
+              placeholder="搜尋文章"
+            />
+
+            <i class="bi bi-search text-accent-200"></i>
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link py-2 px-5 me-5" href="#">所有文章</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-5 me-5" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-5 me-5" href="#">關於我們</a>
+          </li>
+          <li>
+            <a href="#"
+              ><button class="btn btn-lg btn-accent-200 text-white">
+                <h6 class="line-height-sm">登入 / 註冊</h6>
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

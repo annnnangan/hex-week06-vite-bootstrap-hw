@@ -17,47 +17,62 @@
   <div class="container d-flex align-items-cente">
     <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
     <button
-      class="navbar-toggler border-0"
+      class="navbar-toggler d-lg-none"
       type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
     >
-      <span class="text-dark navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon icon-24"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form role="search">
-        <div class="form-control d-flex align-items-center search">
-          <input
-            class="border-0 bg-transparent"
-            type="search"
-            aria-label="Search"
-            placeholder="搜尋文章"
-          />
 
-          <i class="bi bi-search text-accent-200"></i>
-        </div>
-      </form>
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-        <li class="nav-item">
-          <a class="nav-link py-2 px-5 me-5" href="#">所有文章</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2 px-5 me-5" href="#">訂閱方案</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2 px-5 me-5" href="#">關於我們</a>
-        </li>
-        <li>
-          <a href="#"
-            ><button class="btn btn-lg btn-accent-200 text-white">
-              <h6 class="line-height-sm">登入 / 註冊</h6>
-            </button></a
-          >
-        </li>
-      </ul>
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <form role="search">
+          <div class="form-control d-flex align-items-center search">
+            <input
+              class="border-0 bg-transparent"
+              type="search"
+              aria-label="Search"
+              placeholder="搜尋文章"
+            />
+
+            <i class="bi bi-search text-accent-200"></i>
+          </div>
+        </form>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link py-2 px-5 me-5" href="#">所有文章</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-5 me-5" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-5 me-5" href="#">關於我們</a>
+          </li>
+          <li>
+            <a href="#"
+              ><button class="btn btn-lg btn-accent-200 text-white">
+                <h6 class="line-height-sm">登入 / 註冊</h6>
+              </button></a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
@@ -87,8 +102,8 @@
         <div class="position-absolute hero-text">
           <h5 class="mb-3 text-white">獻給新世代的生活風格誌</h5>
           <h2 class="fs-1 fw-bold mb-6 text-white">一起探索生活的無限可能</h2>
-          <a href=""
-            ><button class="btn btn-lg bg-accent-200 text-white">
+          <a href="#"
+            ><button class="btn bg-accent-200 slide-up-hover text-white">
               馬上訂閱 <i class="bi bi-arrow-right ms-3"></i></button
           ></a>
         </div>
@@ -517,11 +532,14 @@
               <li class="mb-4">24 /7 優先客戶服務</li>
               <li class="mb-4">為每個成員量身打造專屬行程</li>
             </ul>
-            <button
-              class="btn btn-accent-200 slide-up-hover text-white fw-md-bolder fw-bold"
-            >
-              我想了解
-            </button>
+
+            <a href="#">
+              <button
+                class="btn btn-accent-200 slide-up-hover text-white fw-md-bolder fw-bold"
+              >
+                我想了解
+              </button>
+            </a>
           </div>
         </div>
 
@@ -1318,11 +1336,13 @@
               >
               給你意想不到的生活風格提案
             </h2>
-            <button
-              class="btn btn-accent-200 slide-up-hover text-white fw-md-bolder fw-bold mb-10 mb-lg-0"
-            >
-              馬上訂閱 <i class="bi bi-arrow-right"></i>
-            </button>
+            <a href="#">
+              <button
+                class="btn btn-accent-200 slide-up-hover text-white fw-md-bolder fw-bold mb-10 mb-lg-0"
+              >
+                馬上訂閱 <i class="bi bi-arrow-right"></i>
+              </button>
+            </a>
           </div>
 
           <div class="projectSwiper col-lg-6">
@@ -1437,11 +1457,13 @@
           <h2 class="mb-4 mb-md-0 fs-bolder">想看什麼主題由你決定！</h2>
           <div class="d-flex flex-column align-items-md-end align-items-center">
             <p class="mb-md-4 mb-8 fs-md-4 fs-5">歡迎投稿與我們分享</p>
-            <button
-              class="btn btn-accent-200 slide-up-hover text-white fw-md-bolder fw-bold mb-10 mb-lg-0"
-            >
-              聯絡我們
-            </button>
+            <a href="#">
+              <button
+                class="btn btn-accent-200 slide-up-hover text-white fw-md-bolder fw-bold mb-10 mb-lg-0"
+              >
+                聯絡我們
+              </button>
+            </a>
           </div>
         </div>
       </div>
