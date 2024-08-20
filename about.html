@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-5ac41069.js"></script>
-    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-f13f5c82.css">
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-9fab8c4c.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-435a9ab4.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg my-8">
   <div class="container d-flex align-items-cente">
     <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
     <button
-      class="navbar-toggler d-lg-none"
+      class="navbar-toggler border-0 d-lg-none"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasRight"
@@ -38,36 +38,50 @@
       </div>
 
       <div class="offcanvas-body">
-        <form role="search">
-          <div class="form-control d-flex align-items-center search">
-            <input
-              class="border-0 bg-transparent"
-              type="search"
-              aria-label="Search"
-              placeholder="搜尋文章"
-            />
-
-            <i class="bi bi-search text-accent-200"></i>
-          </div>
+        <form
+          class="d-flex border rounded-pill border-1 overflow-hidden search-form bg-white mb-lg-0 mb-6"
+          role="search"
+        >
+          <input
+            class="form-control border-0 search bg-white"
+            type="search"
+            placeholder="搜尋文章"
+            aria-label="Search"
+          />
+          <button class="btn border-0 text-accent-200" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
         </form>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <ul
+          class="navbar-nav ms-md-auto mb-9 mb-lg-0 align-items-lg-center align-items-start"
+        >
           <li class="nav-item">
-            <a class="nav-link py-2 px-5 me-5" href="#">所有文章</a>
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="#"
+              >所有文章</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link py-2 px-5 me-5" href="#">訂閱方案</a>
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="#"
+              >訂閱方案</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link py-2 px-5 me-5" href="#">關於我們</a>
-          </li>
-          <li>
-            <a href="#"
-              ><button class="btn btn-lg btn-accent-200 text-white">
-                <h6 class="line-height-sm">登入 / 註冊</h6>
-              </button></a
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0"
+              href="#"
+              >關於我們</a
             >
           </li>
         </ul>
+        <a href="#" class="d-block"
+          ><button class="btn btn-accent-200 text-white w-100 slide-up-hover">
+            <h6 class="line-height-sm">登入 / 註冊</h6>
+          </button></a
+        >
       </div>
     </div>
   </div>

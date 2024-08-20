@@ -9,15 +9,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-5ac41069.js"></script>
-    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-f13f5c82.css">
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-9fab8c4c.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-435a9ab4.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg my-8">
   <div class="container d-flex align-items-cente">
     <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
     <button
-      class="navbar-toggler d-lg-none"
+      class="navbar-toggler border-0 d-lg-none"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasRight"
@@ -42,36 +42,50 @@
       </div>
 
       <div class="offcanvas-body">
-        <form role="search">
-          <div class="form-control d-flex align-items-center search">
-            <input
-              class="border-0 bg-transparent"
-              type="search"
-              aria-label="Search"
-              placeholder="搜尋文章"
-            />
-
-            <i class="bi bi-search text-accent-200"></i>
-          </div>
+        <form
+          class="d-flex border rounded-pill border-1 overflow-hidden search-form bg-white mb-lg-0 mb-6"
+          role="search"
+        >
+          <input
+            class="form-control border-0 search bg-white"
+            type="search"
+            placeholder="搜尋文章"
+            aria-label="Search"
+          />
+          <button class="btn border-0 text-accent-200" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
         </form>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+        <ul
+          class="navbar-nav ms-md-auto mb-9 mb-lg-0 align-items-lg-center align-items-start"
+        >
           <li class="nav-item">
-            <a class="nav-link py-2 px-5 me-5" href="#">所有文章</a>
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="#"
+              >所有文章</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link py-2 px-5 me-5" href="#">訂閱方案</a>
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="#"
+              >訂閱方案</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link py-2 px-5 me-5" href="#">關於我們</a>
-          </li>
-          <li>
-            <a href="#"
-              ><button class="btn btn-lg btn-accent-200 text-white">
-                <h6 class="line-height-sm">登入 / 註冊</h6>
-              </button></a
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0"
+              href="#"
+              >關於我們</a
             >
           </li>
         </ul>
+        <a href="#" class="d-block"
+          ><button class="btn btn-accent-200 text-white w-100 slide-up-hover">
+            <h6 class="line-height-sm">登入 / 註冊</h6>
+          </button></a
+        >
       </div>
     </div>
   </div>
@@ -103,7 +117,9 @@
           <h5 class="mb-3 text-white">獻給新世代的生活風格誌</h5>
           <h2 class="fs-1 fw-bold mb-6 text-white">一起探索生活的無限可能</h2>
           <a href="#"
-            ><button class="btn bg-accent-200 slide-up-hover text-white">
+            ><button
+              class="btn btn-accent-200 slide-up-hover text-white border-0"
+            >
               馬上訂閱 <i class="bi bi-arrow-right ms-3"></i></button
           ></a>
         </div>
@@ -410,6 +426,37 @@
                 >
                   <p class="text-accent-200 eng-font fs-5">Read More</p>
                   <p class="badges badges-member">會員專屬</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="blog-card card align-items-start pb-6 h-100">
+                <picture class="card-img-top">
+                  <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                  <source
+                    srcset="/hex-week06-vite-bootstrap-hw/assets/articles-1-sm-203688b1.png "
+                    class="w-100"
+                    media="(max-width: 768px)"
+                  />
+                  <!-- 預設圖片，通常是桌面版本 -->
+                  <img
+                    src="/hex-week06-vite-bootstrap-hw/assets/articles-1-ebc46e31.png"
+                    class="w-100"
+                    alt="article image"
+                  />
+                </picture>
+
+                <div class="card-body text-start px-0">
+                  <h5 class="fw-bold mb-2">私人島嶼的露營奇遇記</h5>
+                  <p class="fs-6 text-neutral-400">
+                    遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...
+                  </p>
+                </div>
+
+                <div
+                  class="card-bottom d-flex align-items-center w-100 justify-content-between"
+                >
+                  <div class="text-accent-200 fs-5 eng-font">Read More</div>
                 </div>
               </a>
             </div>
