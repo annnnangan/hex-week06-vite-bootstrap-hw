@@ -1,3 +1,15 @@
 .search {
-  border-radius: 100px;
+  color: $neutral-300;
+  font-weight: 600;
+  &:focus {
+    box-shadow: none;
+    color: $neutral-600;
+    font-weight: 700;
+  }
+}
+
+.navbar-toggler {
+  &:focus {
+    border: 0;
+  }
 }
