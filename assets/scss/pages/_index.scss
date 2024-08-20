@@ -84,8 +84,28 @@
   }
 }
 
-.highlight {
-  list-style-type: "| ";
+.special-offer {
+  overflow: hidden;
+  .subtitle {
+    color: $accent-200;
+    @include media-breakpoint-up(md) {
+      color: $primary-400;
+    }
+  }
+
+  .bg-deco-1 {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .bg-deco-2 {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .hot-topic {

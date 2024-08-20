@@ -1,0 +1,10 @@
+.highlight {
+  list-style-type: "| ";
+}
+
+.tick-list {
+  list-style-image: url("/assets/images/tick.svg");
+  li {
+    text-indent: 12px;
+  }
+}
