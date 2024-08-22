@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>註冊</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container my-md-14 my-11">
+      <div class="row w-100 justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="card bg-white p-6 p-lg-9">
+            <div class="card-body">
+              <h2
+                class="card-title fw-bolder fs-4 fs-md-5 mb-md-9 mb-6 text-accent-200"
+              >
+                註冊
+              </h2>
+
+              <form class="mb-md-9 mb-6">
+                <div class="mb-4">
+                  <label for="memberId" class="form-label">會員帳號</label>
+                  <input
+                    type="text"
+                    class="form-control bg-neutral-100"
+                    id="memberId"
+                    placeholder="請輸入會員帳號"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="password" class="form-label">密碼</label>
+                  <input
+                    type="password"
+                    class="form-control bg-neutral-100"
+                    id="password"
+                    placeholder="請輸入密碼"
+                  />
+                </div>
+
+                <div class="mb-md-9 mb-6">
+                  <label for="email" class="form-label">電子信箱</label>
+                  <input
+                    type="email"
+                    class="form-control bg-neutral-100"
+                    id="email"
+                    placeholder="請輸入電子信箱"
+                  />
+                </div>
+
+                <a href="articles-member.html" class="w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-accent-200 text-white fw-bolder w-100"
+                  >
+                    立即登入 <i class="ms-3 bi bi-arrow-right"></i>
+                  </button>
+                </a>
+              </form>
+
+              <div
+                class="row justify-content-center align-items-center mb-md-9 mb-6"
+              >
+                <div class="border-top col-2"></div>
+                <p class="fw-bold text-neutral-300 col-6 text-center">
+                  或以其他方式註冊
+                </p>
+                <div class="border-top col-2"></div>
+              </div>
+
+              <div class="d-flex flex-column mb-mb-9 mb-6">
+                <a
+                  href="#"
+                  class="fw-bold text-neutral-500 btn py-3 btn-neutral-100 mb-2"
+                  ><img
+                    src="../assets/images/icons-google.png"
+                    alt="google icon"
+                    class="me-3"
+                  />使用 Google 登入</a
+                >
+                <a
+                  href="#"
+                  class="fw-bold text-neutral-500 btn py-3 btn-neutral-100"
+                  ><img
+                    src="../assets/images/icons-facebook.png"
+                    alt="google icon"
+                    class="me-3"
+                  />使用 Facebook 登入</a
+                >
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <p class="fw-semibold">
+                  已經是會員了？
+                  <a href="login.html" class="text-accent-200 fw-semibold"
+                    >點此登入</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
