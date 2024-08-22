@@ -1,15 +1,15 @@
 .accent-200-hover {
-  transition: 0.3s;
+  transition: color 0.3s;
   &:hover {
     color: $accent-200;
-    transition: 0.3s;
+    transition: color 0.3s;
   }
 }
 
 .slide-up-hover {
-  transition: 0.3s;
+  transition: color 0.3s;
   &:hover {
     transform: translate(0, -5px);
-    transition: 0.3s;
+    transition: color 0.3s;
   }
 }

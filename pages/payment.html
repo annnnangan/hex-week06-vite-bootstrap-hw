@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款頁</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="payment">
+      <div class="container my-14">
+        <%- include('./layout/nav', {breadcrumb: [{link:"index.html",
+        name:"首頁"},{link:"subscription-package.html",
+        name:"訂閱方案"},{link:"", name:"付款"}]}); -%>
+
+        <div class="row">
+          <!-- 購買人 & 付款方式 -->
+          <div class="col-lg-7 col-md-6 mb-6 mb-md-0">
+            <!-- 購買人 -->
+            <div class="card bg-white p-6 p-lg-9 mb-6">
+              <div class="card-body">
+                <h4 class="card-title fw-bolder fs-5 fs-md-4 mb-md-9 mb-6">
+                  購買人
+                </h4>
+                <div class="mb-4">
+                  <label for="name" class="form-label">姓名</label>
+                  <input
+                    type="text"
+                    class="form-control bg-neutral-100"
+                    id="name"
+                    placeholder="請輸入姓名"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="password" class="form-label">密碼</label>
+                  <input
+                    type="password"
+                    class="form-control bg-neutral-100"
+                    id="password"
+                    placeholder="請輸入密碼"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="form-label">電子信箱</label>
+                  <input
+                    type="email"
+                    class="form-control bg-neutral-100"
+                    id="email"
+                    placeholder="請輸入電子信箱"
+                  />
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="rememberPersonalInfo"
+                  />
+                  <label
+                    class="form-check-label fw-semibold"
+                    for="rememberPersonalInfo"
+                  >
+                    記住我的資訊
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- 付款方式 -->
+            <div class="card bg-white p-6 p-lg-9">
+              <div class="card-body">
+                <h4 class="card-title fw-bolder fs-5 fs-md-4 mb-md-9 mb-6">
+                  付款方式
+                </h4>
+                <p class="eng-font">Pay With</p>
+                <div class="form-check mb-md-9 mb-6">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="paymentMethod"
+                    id="paymentMethod"
+                    checked
+                  />
+                  <label class="form-check-label" for="paymentMethod">
+                    信用卡
+                  </label>
+                </div>
+
+                <div class="mb-4">
+                  <label for="creditCard" class="form-label">信用卡號碼</label>
+                  <input
+                    type="text"
+                    class="form-control bg-neutral-100"
+                    id="creditCard"
+                    placeholder="1234 5678 1234 5678"
+                  />
+                </div>
+                <div class="d-flex">
+                  <div class="me-6 mb-4">
+                    <label for="expireDate" class="form-label">過期日</label>
+                    <input
+                      type="text"
+                      class="form-control bg-neutral-100"
+                      id="expireDate"
+                      placeholder="ＭＭ/YY"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label for="cvv" class="form-label">認證碼</label>
+                    <input
+                      type="text"
+                      class="form-control bg-neutral-100"
+                      id="cvv"
+                      placeholder="CVV"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="rememberCardInfo"
+                  />
+                  <label
+                    class="form-check-label fw-semibold"
+                    for="rememberCardInfo"
+                  >
+                    記住卡片資訊
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 訂單資訊 -->
+          <div class="col-lg-5 col-md-6">
+            <div class="card bg-white p-6 p-lg-9 border-accent-200">
+              <div class="card-body">
+                <h4
+                  class="card-title fw-bolder fs-5 fs-md-4 text-accent-200 pb-md-9 pd-6 border-bottom"
+                >
+                  訂單資訊
+                </h4>
+
+                <!-- 訂單資訊 -->
+                <div class="d-flex justify-content-between border-bottom py-6">
+                  <div>
+                    <h5 class="fw-bolder mb-3">輕量型方案</h5>
+                    <h6 class="fw-bold text-neutral-400">年繳</h6>
+                  </div>
+                  <div><h5 class="eng-font fw-bold">NT 1,188</h5></div>
+                </div>
+
+                <!-- 折扣碼 -->
+                <div class="py-6 py-md-9 border-bottom">
+                  <label for="promoCode" class="form-label">折扣碼</label>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control bg-neutral-100 rounded-3 me-3"
+                      id="promoCode"
+                      placeholder="請輸入折扣碼"
+                    />
+                    <span
+                      ><button
+                        class="btn rounded-pill bg-neutral-100 text-neutral-400 fw-bold"
+                      >
+                        套用
+                      </button></span
+                    >
+                  </div>
+                </div>
+
+                <!-- 價格 -->
+                <div class="py-6 border-bottom">
+                  <div class="d-flex justify-content-between mb-3">
+                    <h6 class="fw-bold text-neutral-500">小計</h6>
+                    <h6 class="eng-font fw-bold text-neutral-500">NT 1,188</h6>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h6 class="fw-bold text-neutral-500">折扣</h6>
+                    <h6 class="eng-font fw-bold text-neutral-500">0</h6>
+                  </div>
+                </div>
+                <!-- 總計 -->
+                <div
+                  class="d-flex justify-content-between align-items-start py-md-9 py-6"
+                >
+                  <h6 class="fw-bold text-neutral-500">總計</h6>
+                  <h6 class="fs-3 eng-font">NT 1,188</h6>
+                </div>
+
+                <a href="thank-you.html" class="w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-accent-200 text-white fw-bolder w-100"
+                  >
+                    立即付款 <i class="ms-3 bi bi-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

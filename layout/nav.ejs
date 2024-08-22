@@ -1,0 +1,19 @@
+<nav aria-label="breadcrumb mb-md-5 mb-2 fs-lg-6 fs-7">
+  <ol class="breadcrumb">
+    <% for(var i=0; i< breadcrumb.length; i++) { %> <% if(i < breadcrumb.length
+    - 1) {%>
+    <li class="breadcrumb-item text-neutral-400">
+      <a href="<%= breadcrumb[i].link %>"> <%= breadcrumb[i].name %> </a>
+    </li>
+
+    <% } else { %>
+    <li class="breadcrumb-item active" aria-current="page">
+      <%= breadcrumb[i].name %>
+    </li>
+    <% } %> <% } %>
+  </ol>
+</nav>
+
+<h2 class="fs-md-1 fs-3 fw-bolder mb-md-11 mb-9">
+  <%= breadcrumb[breadcrumb.length-1].name %>
+</h2>
