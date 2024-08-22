@@ -104,8 +104,11 @@
             <div class="swiper readMoreSwiper read-more-swiper">
               <div class="swiper-wrapper read-more-swiper-wrapper">
                 <!-- 延伸閱讀 1 -->
-                <div class="swiper-slide read-more-swiper-slide mb-md-9">
-                  <div class="card border-0 border-bottom rounded-0 pb-6">
+                <div class="swiper-slide mb-md-9">
+                  <div
+                    class="card border-0 border-bottom rounded-0 pb-6"
+                    data-aos="fade-up"
+                  >
                     <div class="row align-items-start">
                       <!-- 延伸閱讀 1 圖片 -->
                       <div class="col-md-4 mb-4 mb-md-0">
@@ -127,11 +130,11 @@
                       <!-- 延伸閱讀 1 文字 -->
                       <div class="col-md-8">
                         <div class="card-body p-0">
-                          <h4
-                            class="card-title text-neutral-500 fs-5 fw-bolder"
+                          <h3
+                            class="card-title accent-200-hover fs-5 fw-bolder"
                           >
                             週末說走就走露營記
-                          </h4>
+                          </h3>
                           <p class="card-text fw-semibold text-neutral-400">
                             遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
                           </p>
@@ -148,8 +151,11 @@
                   </div>
                 </div>
                 <!-- 延伸閱讀 2 -->
-                <div class="swiper-slide read-more-swiper-slide mb-md-9">
-                  <div class="card border-0 border-bottom rounded-0 pb-6">
+                <div class="swiper-slide mb-md-9">
+                  <div
+                    class="card border-0 border-bottom rounded-0 pb-6"
+                    data-aos="fade-up"
+                  >
                     <div class="row align-items-start">
                       <!-- 延伸閱讀 2 圖片 -->
                       <div class="col-md-4 mb-4 mb-md-0">
@@ -171,11 +177,11 @@
                       <!-- 延伸閱讀 2 文字 -->
                       <div class="col-md-8">
                         <div class="card-body p-0">
-                          <h4
-                            class="card-title text-neutral-500 fs-5 fw-bolder"
+                          <h3
+                            class="card-title accent-200-hover fs-5 fw-bolder"
                           >
                             城市野營日記
-                          </h4>
+                          </h3>
                           <p class="card-text fw-semibold text-neutral-400">
                             終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
                           </p>
@@ -192,8 +198,11 @@
                   </div>
                 </div>
                 <!-- 延伸閱讀 3 -->
-                <div class="swiper-slide read-more-swiper-slide mb-md-9">
-                  <div class="card border-0 border-bottom rounded-0 pb-6">
+                <div class="swiper-slide">
+                  <div
+                    class="card border-0 border-bottom rounded-0 pb-6"
+                    data-aos="fade-up"
+                  >
                     <div class="row align-items-start">
                       <!-- 延伸閱讀 3 圖片 -->
                       <div class="col-md-4 mb-4 mb-md-0">
@@ -212,16 +221,16 @@
                           />
                         </picture>
                       </div>
-                      <!-- 延伸閱讀 3 文字 -->
+                      <!-- 延伸閱讀 1 文字 -->
                       <div class="col-md-8">
                         <div class="card-body p-0">
-                          <h4
-                            class="card-title text-neutral-500 fs-5 fw-bolder text-truncate"
+                          <h3
+                            class="card-title accent-200-hover fs-5 fw-bolder"
                           >
-                            和寵物去露營 - 大自然之旅的
-                          </h4>
+                            和寵物去露營 - 大自然之旅的雙倍體驗
+                          </h3>
                           <p class="card-text fw-semibold text-neutral-400">
-                            說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當的...
+                            說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
                           </p>
                           <div class="d-flex justify-content-end">
                             <a
@@ -245,6 +254,11 @@
     <%- include('./layout/footer'); -%>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script type="module" src="../main.js"></script>
   </body>

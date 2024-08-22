@@ -8,7 +8,7 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="container mb-lg-13 mb-md-11 mb-6 px-0">
+    <div class="container mb-lg-13 mb-md-11 mb-6 px-0" data-aos="fade-up">
       <picture>
         <!-- 當螢幕寬度少於768px時，替換圖片 -->
         <source
@@ -37,7 +37,7 @@
           <div class="card mb-lg-11 mb-6 border-0">
             <div class="row align-items-start">
               <div class="col-lg-6 mb-6 mb-lg-0 px-0 px-lg-3">
-                <picture>
+                <picture data-aos="fade-right">
                   <!-- 當螢幕寬度少於992px時，替換圖片 -->
                   <source
                     srcset="../assets/images/about-1-sm.png"
@@ -52,7 +52,7 @@
                   />
                 </picture>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6" data-aos="fade-left">
                 <div class="card-body py-0 px-lg-9 px-3">
                   <h3
                     class="card-title eng-font text-neutral-600 fw-bold mb-3 fs-lg-2 fs-6"
@@ -89,7 +89,7 @@
           <div class="card mb-lg-11 border-0">
             <div class="row align-items-start flex-lg-row-reverse">
               <div class="col-lg-6 mb-6 mb-lg-0 px-0 px-lg-3">
-                <picture>
+                <picture data-aos="fade-left">
                   <!-- 當螢幕寬度少於992px時，替換圖片 -->
                   <source
                     srcset="../assets/images/about-2-sm.png"
@@ -104,7 +104,7 @@
                   />
                 </picture>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6" data-aos="fade-right">
                 <div class="card-body py-0 px-lg-9 px-3">
                   <h3
                     class="card-title eng-font text-neutral-600 fw-bold mb-lg-8 mb-4 fs-lg-2 fs-6"
@@ -147,6 +147,7 @@
                   <!-- 2020 -->
                   <li
                     class="d-flex flex-md-row flex-column align-items-start mb-13"
+                    data-aos="fade-right"
                   >
                     <p
                       class="eng-font p-3 fs-lg-6 bg-primary-400 text-neutral-100 me-12 mb-lg-0 mb-4"
@@ -188,6 +189,7 @@
                   <!-- 2021 -->
                   <li
                     class="d-flex flex-md-row flex-column align-items-start mb-13"
+                    data-aos="fade-left"
                   >
                     <p
                       class="eng-font p-3 fs-lg-6 bg-primary-400 text-neutral-100 me-12 mb-lg-0 mb-4"
@@ -242,6 +244,7 @@
                   <!-- 2022 -->
                   <li
                     class="d-flex flex-md-row flex-column align-items-start mb-13"
+                    data-aos="fade-right"
                   >
                     <p
                       class="eng-font p-3 fs-lg-6 bg-primary-400 text-neutral-100 me-12 mb-lg-0 mb-4"
@@ -296,6 +299,7 @@
                   <!-- 2023 -->
                   <li
                     class="d-flex flex-md-row flex-column align-items-start mb-13"
+                    data-aos="fade-left"
                   >
                     <p
                       class="eng-font p-3 fs-lg-6 bg-primary-400 text-neutral-100 me-12 mb-lg-0 mb-4"
@@ -390,6 +394,11 @@
     </div>
 
     <%- include('./layout/footer'); -%>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script type="module" src="../main.js"></script>
   </body>
