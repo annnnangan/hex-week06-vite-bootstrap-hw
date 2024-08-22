@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-7f2519dc.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-49a1d940.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-0">
+  <div class="container py-8">
+    <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
+    <button
+      class="navbar-toggler border-0 d-lg-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      <span class="navbar-toggler-icon icon-24"></span>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <form class="d-flex search-form mb-lg-0 mb-6" role="search">
+          <div
+            class="input-group flex-nowrap border border-1 rounded-pill overflow-hidden"
+          >
+            <input
+              type="search"
+              class="form-control bg-white border-0 search"
+              placeholder="搜尋文章"
+              aria-label="Search"
+              aria-describedby="addon-wrapping"
+            />
+            <span
+              class="input-group-text bg-white search-icon border-0"
+              id="addon-wrapping"
+              ><i class="bi bi-search text-accent-200"></i
+            ></span>
+          </div>
+        </form>
+        <ul
+          class="navbar-nav ms-md-auto mb-9 mb-lg-0 align-items-lg-center align-items-start"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="articles-member.html"
+              >所有文章</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="subscription-package.html"
+              >訂閱方案</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0"
+              href="about.html"
+              >關於我們</a
+            >
+          </li>
+        </ul>
+        <a href="login.html" class="d-block"
+          ><button class="btn btn-accent-200 text-white w-100 slide-up-hover">
+            <h6 class="line-height-sm">登入 / 註冊</h6>
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container navbar-divider">
+  <hr />
+</div>
+
+    <!-- Banner -->
+    <div class="container mb-lg-13 mb-md-11 mb-6 px-0">
+      <picture>
+        <!-- 當螢幕寬度少於768px時，替換圖片 -->
+        <source
+          srcset="/hex-week06-vite-bootstrap-hw/assets/article-banner-sm-e9da1f9f.png "
+          class="w-100"
+          media="(max-width: 768px)"
+        />
+        <!-- 預設圖片，通常是桌面版本 -->
+        <img
+          src="/hex-week06-vite-bootstrap-hw/assets/article-banner-2da53661.png"
+          class="w-100"
+          alt="hero banner"
+        />
+      </picture>
+    </div>
+
+    <!-- 標題 -->
+    <div class="container mb-md-9 mb-6">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <nav aria-label="breadcrumb mb-md-5 mb-2 fs-lg-6 fs-7">
+  <ol class="breadcrumb">
+     
+    <li class="breadcrumb-item text-neutral-400">
+      <a href="index.html"> 首頁 </a>
+    </li>
+
+      
+    <li class="breadcrumb-item text-neutral-400">
+      <a href="index.html"> 所有文章 </a>
+    </li>
+
+      
+    <li class="breadcrumb-item active" aria-current="page">
+      私人島嶼的露營奇遇記
+    </li>
+     
+  </ol>
+</nav>
+
+<h2 class="fs-md-1 fs-3 fw-bolder">
+  私人島嶼的露營奇遇記
+</h2>
+          <p class="text-neutral-300 fw-bold mt-4">2024 / 5 / 1</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 正文 -->
+    <div class="container mb-md-9 mb-6 article-content-member">
+      <div class="row flex-column align-items-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="position-relative">
+            <p class="mb-md-9 mb-6 fw-semibold text-neutral-500">
+              嗨！我是秘境尋蹤小編
+              Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。
+            </p>
+            <p class="mb-md-9 mb-6 fw-semibold text-neutral-500">
+              這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。
+            </p>
+
+            <picture>
+              <!-- 當螢幕寬度少於992px時，替換圖片 -->
+              <source
+                srcset="/hex-week06-vite-bootstrap-hw/assets/content-1-sm-9961c35e.png "
+                class="w-100"
+                media="(max-width: 768px)"
+              />
+              <!-- 預設圖片，通常是桌面版本 -->
+              <img
+                src="/hex-week06-vite-bootstrap-hw/assets/content-1-b1d7a29a.png"
+                class="w-100"
+                alt="article image"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 訂閱CTA -->
+    <div class="container">
+      <div class="d-flex flex-column align-items-center fw-bold">
+        <p class="d-md-block d-none mb-4">
+          本篇為會員專屬文章，馬上訂閱瀏覽所有內容！
+        </p>
+
+        <p class="d-block d-md-none text-center mb-3 fw-bold">
+          本篇為會員專屬文章<br />馬上訂閱瀏覽所有內容！
+        </p>
+        <a href="subscription-package.html">
+          <button
+            type="submit"
+            class="btn btn-accent-200 text-white fw-bolder w-100 mb-11 mb-md-14"
+          >
+            我要訂閱 <i class="ms-3 bi bi-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- 延伸閱讀 -->
+    <div class="container mb-md-14 mb-11">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="swiper readMoreSwiper">
+            <div class="swiper-wrapper">
+              <!-- 延伸閱讀 1 -->
+              <div class="swiper-slide mb-md-9">
+                <div class="card border-0 border-bottom rounded-0 pb-6">
+                  <div class="row align-items-start">
+                    <!-- 延伸閱讀 1 圖片 -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                      <picture>
+                        <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                        <source
+                          srcset="/hex-week06-vite-bootstrap-hw/assets/read-1-sm-01407a34.png "
+                          class="w-100 rounded"
+                          media="(max-width: 768px)"
+                        />
+                        <!-- 預設圖片，通常是桌面版本 -->
+                        <img
+                          src="/hex-week06-vite-bootstrap-hw/assets/read-1-7447f302.png"
+                          class="w-100 rounded"
+                          alt="read more article image"
+                        />
+                      </picture>
+                    </div>
+                    <!-- 延伸閱讀 1 文字 -->
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h3 class="card-title text-neutral-500 fs-5 fw-bolder">
+                          週末說走就走露營記
+                        </h3>
+                        <p class="card-text fw-semibold text-neutral-400">
+                          遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <a
+                            href="#"
+                            class="text-accent-200 eng-font fw-bold slide-up-hover"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 延伸閱讀 2 -->
+              <div class="swiper-slide mb-md-9">
+                <div class="card border-0 border-bottom rounded-0 pb-6">
+                  <div class="row align-items-start">
+                    <!-- 延伸閱讀 2 圖片 -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                      <picture>
+                        <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                        <source
+                          srcset="/hex-week06-vite-bootstrap-hw/assets/read-2-sm-24c5fd2f.png "
+                          class="w-100 rounded"
+                          media="(max-width: 768px)"
+                        />
+                        <!-- 預設圖片，通常是桌面版本 -->
+                        <img
+                          src="/hex-week06-vite-bootstrap-hw/assets/read-2-9172e3e2.png"
+                          class="w-100 rounded"
+                          alt="read more article image"
+                        />
+                      </picture>
+                    </div>
+                    <!-- 延伸閱讀 2 文字 -->
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h3 class="card-title text-neutral-500 fs-5 fw-bolder">
+                          城市野營日記
+                        </h3>
+                        <p class="card-text fw-semibold text-neutral-400">
+                          終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <a
+                            href="#"
+                            class="text-accent-200 eng-font fw-bold slide-up-hover"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 延伸閱讀 3 -->
+              <div class="swiper-slide">
+                <div class="card border-0 border-bottom rounded-0 pb-6">
+                  <div class="row align-items-start">
+                    <!-- 延伸閱讀 3 圖片 -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                      <picture>
+                        <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                        <source
+                          srcset="/hex-week06-vite-bootstrap-hw/assets/read-3-sm-0df9b892.png "
+                          class="w-100 rounded"
+                          media="(max-width: 768px)"
+                        />
+                        <!-- 預設圖片，通常是桌面版本 -->
+                        <img
+                          src="/hex-week06-vite-bootstrap-hw/assets/read-3-84996d96.png"
+                          class="w-100 rounded"
+                          alt="read more article image"
+                        />
+                      </picture>
+                    </div>
+                    <!-- 延伸閱讀 1 文字 -->
+                    <div class="col-md-8">
+                      <div class="card-body p-0">
+                        <h3 class="card-title text-neutral-500 fs-5 fw-bolder">
+                          和寵物去露營 - 大自然之旅的雙倍體驗
+                        </h3>
+                        <p class="card-text fw-semibold text-neutral-400">
+                          說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                        </p>
+                        <div class="d-flex justify-content-end">
+                          <a
+                            href="#"
+                            class="text-accent-200 eng-font fw-bold slide-up-hover"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div
+    class="container text-center border-top eng-font fw-semibold text-primary-400 py-5 py-md-6 fs-md-6 fs-8"
+  >
+    ©Vivre 2024 All right Reserved
+  </div>
+</footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
+  </body>
+</html>
