@@ -15,7 +15,9 @@ function btnSize() {
   }
 }
 
-btnSize();
+if (button) {
+  btnSize();
+}
 
 //Homepage - Blog Swiper
 var blogSwiper = new Swiper(".blogSwiper", {
@@ -180,36 +182,56 @@ function createReadMoreSwiper() {
     autoplay: {
       delay: 5000,
     },
+    breakpoints: {
+      // when window width is >= 768px
+      768: {
+        autoplay: false,
+        grabCursor: false,
+        loop: false,
+        slidesPerGroup: 3,
+      },
+    },
   });
 }
 
 //Article - Read More Swiper - Remove Project Swiper on Desktop
-const readMoreSwiperContainer = document.querySelector(
-  ".readMoreSwiper .swiper-wrapper"
-);
+const articlesWrapper = document.querySelector(".read-more-swiper");
 
 function disableReadMoreSwiper() {
+  const readMoreSwiperWrapper = document.querySelector(
+    ".read-more-swiper-wrapper"
+  );
+
   if (window.innerWidth >= 768) {
     if (readMoreSwiper) {
       readMoreSwiper.destroy();
     }
-    readMoreSwiperContainer.classList.add("row");
+    readMoreSwiperWrapper.classList.add("row");
   } else {
     createReadMoreSwiper();
-    readMoreSwiperContainer.classList.remove("row");
+    readMoreSwiperWrapper.classList.remove("row");
   }
 }
 
-if (readMoreSwiperContainer) {
+if (articlesWrapper) {
   disableReadMoreSwiper();
 }
 
 //All - Window Resize
 window.addEventListener("resize", () => {
-  disableLifeSwiper();
-  btnSize();
-  disableProjectSwiper();
-  if (readMoreSwiperContainer) {
+  console.log("resizing");
+  if (projectSwiperWrapper) {
+    disableProjectSwiper();
+  }
+
+  if (button) {
+    btnSize();
+  }
+  if (lifeCardContainer) {
+    disableLifeSwiper();
+  }
+
+  if (articlesWrapper) {
     disableReadMoreSwiper();
   }
 });
