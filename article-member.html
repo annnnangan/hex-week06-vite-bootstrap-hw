@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>付款成功</title>
+    <title>文章</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-f0969241.js"></script>
     <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-7d7ba2b0.css">
   </head>
@@ -93,64 +97,51 @@
 <div class="container navbar-divider">
   <hr />
 </div>
-    <div class="container thank-you">
-      <div
-        class="d-flex flex-column align-items-center my-md-14 my-11 justify-content-center"
-      >
-        <h2 class="fs-1 text-accent-200 fw-bolder mb-6 text-center">
-          <i class="bi bi-check2-circle me-5"></i>付款成功
-        </h2>
-        <div class="row w-100 justify-content-center">
-          <div class="col-lg-6 col-md-8">
-            <div class="card bg-white p-6 p-lg-9">
-              <div class="card-body">
-                <h3
-                  class="card-title fw-bolder fs-4 fs-md-5 border-bottom pb-6"
-                >
-                  訂購資訊
-                </h3>
 
-                <!-- 訂單資訊 -->
-                <div class="mb-md-9 border-bottom py-6">
-                  <div
-                    class="d-flex justify-content-between flex-wrap mb-md-9 mb-6"
-                  >
-                    <div>
-                      <h5 class="fw-bolder mb-3">輕量型方案</h5>
-                      <h6 class="fw-bold text-neutral-400">年繳</h6>
-                    </div>
-                    <div><h5 class="eng-font fw-bold">NT 1,188</h5></div>
-                  </div>
-
-                  <div class="d-flex justify-content-between mb-4">
-                    <h6 class="text-neutral-400 fw-bold">開始日</h6>
-                    <h6 class="eng-font text-neutral-400 fw-bold">
-                      2024 / 5 / 1
-                    </h6>
-                  </div>
-
-                  <div class="d-flex justify-content-between">
-                    <h6 class="text-neutral-400 fw-bold">終止日</h6>
-                    <h6 class="eng-font text-neutral-400 fw-bold">
-                      2025 / 5 / 1
-                    </h6>
-                  </div>
-                </div>
-
-                <a href="article-member.html" class="w-100">
-                  <button
-                    type="submit"
-                    class="btn btn-accent-200 text-white fw-bolder w-100"
-                  >
-                    瀏覽文章 <i class="ms-3 bi bi-arrow-right"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="container mb-lg-13 mb-md-11 mb-6 px-0">
+      <picture>
+        <!-- 當螢幕寬度少於768px時，替換圖片 -->
+        <source
+          srcset="/hex-week06-vite-bootstrap-hw/assets/article-banner-sm-e9da1f9f.png "
+          class="w-100"
+          media="(max-width: 768px)"
+        />
+        <!-- 預設圖片，通常是桌面版本 -->
+        <img
+          src="/hex-week06-vite-bootstrap-hw/assets/article-banner-2da53661.png"
+          class="w-100"
+          alt="hero banner"
+        />
+      </picture>
     </div>
+
+    <div class="container my-14">
+      <nav aria-label="breadcrumb mb-md-5 mb-2 fs-lg-6 fs-7">
+  <ol class="breadcrumb">
+     
+    <li class="breadcrumb-item text-neutral-400">
+      <a href="index.html"> 首頁 </a>
+    </li>
+
+      
+    <li class="breadcrumb-item text-neutral-400">
+      <a href="index.html"> 所有文章 </a>
+    </li>
+
+      
+    <li class="breadcrumb-item active" aria-current="page">
+      私人島嶼的露營奇遇記
+    </li>
+     
+  </ol>
+</nav>
+
+<h2 class="fs-md-1 fs-3 fw-bolder">
+  私人島嶼的露營奇遇記
+</h2>
+      <p class="text-neutral-300 fw-bold">2024 / 5 / 1</p>
+    </div>
+
     <footer class="footer">
   <div
     class="container text-center border-top eng-font fw-semibold text-primary-400 py-5 py-md-6 fs-md-6 fs-8"
@@ -158,6 +149,7 @@
     ©Vivre 2024 All right Reserved
   </div>
 </footer>
+
     
   </body>
 </html>
