@@ -1,5 +1,8 @@
 .highlight {
-  list-style-type: "| ";
+  list-style-type: "|";
+  li {
+    padding-left: 12px;
+  }
 }
 
 .tick-list {
