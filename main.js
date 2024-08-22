@@ -1,6 +1,23 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+//All - Button RWD
+const button = document.querySelectorAll("button");
+function btnSize() {
+  if (window.innerWidth >= 768) {
+    button.forEach((btn) => {
+      btn.classList.add("btn-lg");
+    });
+  } else {
+    button.forEach((btn) => {
+      btn.classList.remove("btn-lg");
+    });
+  }
+}
+
+btnSize();
+
+//Homepage - Blog Swiper
 var blogSwiper = new Swiper(".blogSwiper", {
   loop: true,
   autoplay: {
@@ -27,6 +44,7 @@ var blogSwiper = new Swiper(".blogSwiper", {
   },
 });
 
+//Homepage - Hot Topic Swiper
 var hotTopicSwiper = new Swiper(".hotTopicSwiper", {
   loop: true,
   autoplay: {
@@ -37,8 +55,7 @@ var hotTopicSwiper = new Swiper(".hotTopicSwiper", {
   spaceBetween: 24,
 });
 
-//Life Swiper Configuration
-
+//Homepage - Life Swiper
 var lifeSwiper;
 
 function createLifeSwiper() {
@@ -80,7 +97,7 @@ function createLifeSwiper() {
 
 const lifeCardContainer = document.querySelector(".lifeSwiper .swiper-wrapper");
 
-//Remove Swiper on Mobile
+//Home - Life Swiper - Remove Life Swiper on Mobile
 function disableLifeSwiper() {
   if (window.innerWidth >= 768) {
     lifeCardContainer.classList.remove("d-flex");
@@ -95,29 +112,11 @@ function disableLifeSwiper() {
   }
 }
 
-disableLifeSwiper();
-window.addEventListener("resize", () => {
+if (lifeCardContainer) {
   disableLifeSwiper();
-  btnSize();
-  disableProjectSwiper();
-});
-
-const button = document.querySelectorAll("button");
-function btnSize() {
-  if (window.innerWidth >= 768) {
-    button.forEach((btn) => {
-      btn.classList.add("btn-lg");
-    });
-  } else {
-    button.forEach((btn) => {
-      btn.classList.remove("btn-lg");
-    });
-  }
 }
 
-btnSize();
-
-// Project Swiper
+//Homepage - Project Swiper
 let projectSwiper;
 function createProjectSwiper() {
   projectSwiper = new Swiper(".projectSwiper", {
@@ -139,7 +138,7 @@ function createProjectSwiper() {
   });
 }
 
-//Remove Project Swiper on Desktop
+//Homepage - Project Swiper - Remove Project Swiper on Desktop
 const projectSwiperWrapper = document.querySelector(".project .swiper-wrapper");
 const projectSwiperContainer = document.querySelector(".projectSwiper");
 const projectSwiperItem = document.querySelectorAll(
@@ -166,5 +165,51 @@ function disableProjectSwiper() {
     });
   }
 }
+if (projectSwiperWrapper) {
+  disableProjectSwiper();
+}
 
-disableProjectSwiper();
+//Article - Read More Swiper
+let readMoreSwiper;
+function createReadMoreSwiper() {
+  readMoreSwiper = new Swiper(".readMoreSwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    spaceBetween: 24,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+  });
+}
+
+//Article - Read More Swiper - Remove Project Swiper on Desktop
+const readMoreSwiperContainer = document.querySelector(
+  ".readMoreSwiper .swiper-wrapper"
+);
+
+function disableReadMoreSwiper() {
+  if (window.innerWidth >= 768) {
+    if (readMoreSwiper) {
+      readMoreSwiper.destroy();
+    }
+    readMoreSwiperContainer.classList.add("row");
+  } else {
+    createReadMoreSwiper();
+    readMoreSwiperContainer.classList.remove("row");
+  }
+}
+
+if (readMoreSwiperContainer) {
+  disableReadMoreSwiper();
+}
+
+//All - Window Resize
+window.addEventListener("resize", () => {
+  disableLifeSwiper();
+  btnSize();
+  disableProjectSwiper();
+  if (readMoreSwiperContainer) {
+    disableReadMoreSwiper();
+  }
+});
