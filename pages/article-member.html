@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container mb-lg-13 mb-md-11 mb-6 px-0">
+      <picture>
+        <!-- 當螢幕寬度少於768px時，替換圖片 -->
+        <source
+          srcset="../assets/images/article-banner-sm.png"
+          class="w-100"
+          media="(max-width: 768px)"
+        />
+        <!-- 預設圖片，通常是桌面版本 -->
+        <img
+          src="../assets/images/article-banner.png"
+          class="w-100"
+          alt="hero banner"
+        />
+      </picture>
+    </div>
+
+    <div class="container my-14">
+      <%- include('./layout/nav', {breadcrumb: [{link:"index.html",
+      name:"首頁"},{link:"index.html", name:"所有文章"},{link:"",
+      name:"私人島嶼的露營奇遇記"}]}); -%>
+      <p class="text-neutral-300 fw-bold">2024 / 5 / 1</p>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
