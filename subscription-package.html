@@ -8,12 +8,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-bd05778b.js"></script>
-    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-84026441.css">
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-f0969241.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-7d7ba2b0.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg my-8">
-  <div class="container d-flex align-items-cente">
+    <nav class="navbar navbar-expand-lg py-0">
+  <div class="container py-8">
     <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
     <button
       class="navbar-toggler border-0 d-lg-none"
@@ -41,19 +41,23 @@
       </div>
 
       <div class="offcanvas-body">
-        <form
-          class="d-flex border rounded-pill border-1 overflow-hidden search-form bg-white mb-lg-0 mb-6"
-          role="search"
-        >
-          <input
-            class="form-control border-0 search bg-white"
-            type="search"
-            placeholder="搜尋文章"
-            aria-label="Search"
-          />
-          <button class="btn border-0 text-accent-200" type="submit">
-            <i class="bi bi-search"></i>
-          </button>
+        <form class="d-flex search-form mb-lg-0 mb-6" role="search">
+          <div
+            class="input-group flex-nowrap border border-1 rounded-pill overflow-hidden"
+          >
+            <input
+              type="search"
+              class="form-control bg-white border-0 search"
+              placeholder="搜尋文章"
+              aria-label="Search"
+              aria-describedby="addon-wrapping"
+            />
+            <span
+              class="input-group-text bg-white search-icon border-0"
+              id="addon-wrapping"
+              ><i class="bi bi-search text-accent-200"></i
+            ></span>
+          </div>
         </form>
         <ul
           class="navbar-nav ms-md-auto mb-9 mb-lg-0 align-items-lg-center align-items-start"
@@ -61,7 +65,7 @@
           <li class="nav-item">
             <a
               class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
-              href="#"
+              href="articles-member.html"
               >所有文章</a
             >
           </li>
@@ -90,21 +94,29 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container navbar-divider">
   <hr />
 </div>
     <div class="subscription-package">
-      <div class="container my-13">
+      <div class="container my-14">
         <nav aria-label="breadcrumb mb-md-5 mb-2 fs-lg-6 fs-7">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item text-neutral-400">
-              <a href="#">首頁</a>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">訂閱方案</li>
-          </ol>
-        </nav>
+  <ol class="breadcrumb">
+     
+    <li class="breadcrumb-item text-neutral-400">
+      <a href="index.html"> 首頁 </a>
+    </li>
 
-        <h2 class="fs-md-1 fs-3 fw-bolder mb-md-11 mb-9">訂閱方案</h2>
+      
+    <li class="breadcrumb-item active" aria-current="page">
+      訂閱方案
+    </li>
+     
+  </ol>
+</nav>
+
+<h2 class="fs-md-1 fs-3 fw-bolder mb-md-11 mb-9">
+  訂閱方案
+</h2>
 
         <div class="d-flex flex-column">
           <div
@@ -113,7 +125,7 @@
             role="tablist"
           >
             <a
-              class="list-group-item active py-3 px-12 text-center d-flex align-items-center me-md-6"
+              class="list-group-item active py-3 px-13 text-center d-flex align-items-center me-md-6"
               id="list-yearly-package-list"
               data-bs-toggle="list"
               href="#list-yearly-package"
@@ -122,7 +134,7 @@
               >年繳</a
             >
             <a
-              class="list-group-item py-3 px-12 text-center d-flex align-items-center"
+              class="list-group-item py-3 px-13 text-center d-flex align-items-center"
               id="list-monthly-package-list"
               data-bs-toggle="list"
               href="#list-monthly-package"
@@ -268,10 +280,12 @@
       </div>
     </div>
 
-    <footer
-  class="footer eng-font fw-semibold text-primary-400 py-5 py-md-6 fs-md-6 fs-8"
->
-  <div class="container text-center">©Vivre 2024 All right Reserved</div>
+    <footer class="footer">
+  <div
+    class="container text-center border-top eng-font fw-semibold text-primary-400 py-5 py-md-6 fs-md-6 fs-8"
+  >
+    ©Vivre 2024 All right Reserved
+  </div>
 </footer>
     <script>
       const packageList = document.querySelectorAll(".package");
