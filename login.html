@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-940e46f5.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-bddfb4e9.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-0">
+  <div class="container py-8">
+    <a class="navbar-brand" href="index.html"
+      ><h1 class="fs-lg-5 fs-1">Vivre</h1></a
+    >
+    <button
+      class="navbar-toggler border-0 d-lg-none"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      <span class="navbar-toggler-icon icon-24"></span>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end w-100"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <form class="d-flex search-form mb-lg-0 mb-6" role="search">
+          <div
+            class="input-group flex-nowrap border border-1 rounded-pill overflow-hidden"
+          >
+            <input
+              type="search"
+              class="form-control bg-white border-0 search"
+              placeholder="搜尋文章"
+              aria-label="Search"
+              aria-describedby="addon-wrapping"
+            />
+            <span
+              class="input-group-text bg-white search-icon border-0"
+              id="addon-wrapping"
+              ><i class="bi bi-search text-accent-200"></i
+            ></span>
+          </div>
+        </form>
+        <ul
+          class="navbar-nav ms-md-auto mb-9 mb-lg-0 align-items-lg-center align-items-start"
+        >
+          <li class="nav-item">
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="articles-public.html"
+              >所有文章</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
+              href="subscription-package.html"
+              >訂閱方案</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0"
+              href="about.html"
+              >關於我們</a
+            >
+          </li>
+        </ul>
+        <a href="login.html" class="d-block"
+          ><button class="btn btn-accent-200 text-white w-100 slide-up-hover">
+            <h6 class="line-height-sm">登入 / 註冊</h6>
+          </button></a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container navbar-divider">
+  <hr />
+</div>
+
+    <div class="container my-md-14 my-11">
+      <div class="row w-100 justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="card bg-white p-6 p-lg-9">
+            <div class="card-body">
+              <h2
+                class="card-title fw-bolder fs-4 fs-md-5 mb-md-9 mb-6 text-accent-200"
+              >
+                登入
+              </h2>
+
+              <form class="mb-md-9 mb-6">
+                <div class="mb-4">
+                  <label for="memberId" class="form-label">會員帳號</label>
+                  <input
+                    type="text"
+                    class="form-control bg-neutral-100"
+                    id="memberId"
+                    placeholder="請輸入會員帳號"
+                  />
+                </div>
+
+                <div class="mb-md-9 mb-6">
+                  <label for="password" class="form-label">密碼</label>
+                  <input
+                    type="password"
+                    class="form-control bg-neutral-100"
+                    id="password"
+                    placeholder="請輸入密碼"
+                  />
+                </div>
+
+                <a href="articles-member.html" class="w-100">
+                  <button
+                    type="submit"
+                    class="btn btn-accent-200 text-white fw-bolder w-100"
+                  >
+                    立即登入 <i class="ms-3 bi bi-arrow-right"></i>
+                  </button>
+                </a>
+              </form>
+
+              <div
+                class="row justify-content-center align-items-center mb-md-9 mb-6"
+              >
+                <div class="border-top col-2"></div>
+                <p class="fw-bold text-neutral-300 col-6 text-center">
+                  或以其他方式登入
+                </p>
+                <div class="border-top col-2"></div>
+              </div>
+
+              <div class="d-flex flex-column mb-mb-9 mb-6">
+                <a
+                  href="#"
+                  class="fw-bold text-neutral-500 btn py-3 btn-neutral-100 mb-2"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg=="
+                    alt="google icon"
+                    class="me-3"
+                  />使用 Google 登入</a
+                >
+                <a
+                  href="#"
+                  class="fw-bold text-neutral-500 btn py-3 btn-neutral-100"
+                  ><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg=="
+                    alt="google icon"
+                    class="me-3"
+                  />使用 Facebook 登入</a
+                >
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <p class="fw-semibold">
+                  已經是會員了？
+                  <a href="register.html" class="text-accent-200 fw-semibold"
+                    >點此註冊</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div
+    class="container text-center border-top eng-font fw-semibold text-primary-400 py-5 py-md-6 fs-md-6 fs-8"
+  >
+    ©Vivre 2024 All right Reserved
+  </div>
+</footer>
+
+    
+  </body>
+</html>
