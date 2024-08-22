@@ -8,13 +8,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-7f2519dc.js"></script>
-    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-49a1d940.css">
+    <script type="module" crossorigin src="/hex-week06-vite-bootstrap-hw/assets/main-940e46f5.js"></script>
+    <link rel="stylesheet" href="/hex-week06-vite-bootstrap-hw/assets/main-bddfb4e9.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg py-0">
   <div class="container py-8">
-    <a class="navbar-brand" href="#"><h1 class="fs-lg-5 fs-1">Vivre</h1></a>
+    <a class="navbar-brand" href="index.html"
+      ><h1 class="fs-lg-5 fs-1">Vivre</h1></a
+    >
     <button
       class="navbar-toggler border-0 d-lg-none"
       type="button"
@@ -65,7 +67,7 @@
           <li class="nav-item">
             <a
               class="nav-link accent-200-hover py-2 px-5 me-lg-5 mb-lg-0 mb-6"
-              href="articles-member.html"
+              href="articles-public.html"
               >所有文章</a
             >
           </li>
@@ -149,7 +151,7 @@
     </div>
 
     <!-- 正文 -->
-    <div class="container mb-md-9 mb-6 article-content-member">
+    <div class="container mb-md-9 mb-6">
       <div class="row flex-column align-items-center">
         <div class="col-lg-8 col-md-10">
           <div class="position-relative">
@@ -162,42 +164,59 @@
             </p>
 
             <picture>
-              <!-- 當螢幕寬度少於992px時，替換圖片 -->
+              <!-- 當螢幕寬度少於768px時，替換圖片 -->
               <source
                 srcset="/hex-week06-vite-bootstrap-hw/assets/content-1-sm-9961c35e.png "
-                class="w-100"
+                class="w-100 mb-md-9 mb-6"
                 media="(max-width: 768px)"
               />
               <!-- 預設圖片，通常是桌面版本 -->
               <img
                 src="/hex-week06-vite-bootstrap-hw/assets/content-1-b1d7a29a.png"
-                class="w-100"
+                class="w-100 mb-md-9 mb-6"
                 alt="article image"
               />
             </picture>
+
+            <p class="mb-md-9 mb-6 fw-semibold text-neutral-500">
+              這個小島並不大，但卻擁有令人驚艷的景色。在午夜的沙灘上，星空如水晶般璀璨，海浪聲如琴音般撫慰著我的心靈。椰林掩映著沙灘，樹影婆娑，彷彿舞者在天空中翩翩起舞。我選擇在沙灘上搭建了我的帳篷，每一天清晨，太陽的第一縷光照在我的臉上，讓我感受到生命的美好。
+            </p>
+            <p class="mb-md-9 mb-6 fw-semibold text-neutral-500">
+              島上的每個角落都充滿了驚喜和挑戰。在叢林中，我發現了許多珍貴的生物，每一種都是大自然的奇蹟。在海邊，我盡情地嬉戲於波濤之間，感受海風撫過臉龐的清涼。我發現，與大自然的親密接觸，讓我感受到了一種無法言喻的喜悅和寧靜。
+            </p>
+
+            <div class="d-md-flex">
+              <picture class="me-md-6">
+                <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                <source
+                  srcset="/hex-week06-vite-bootstrap-hw/assets/content-3-sm-f377d9c4.png "
+                  class="w-100 mb-md-9 mb-6"
+                  media="(max-width: 768px)"
+                />
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img
+                  src="/hex-week06-vite-bootstrap-hw/assets/content-3-16340463.png"
+                  class="w-100 mb-md-9 mb-6"
+                  alt="article image"
+                />
+              </picture>
+              <picture>
+                <!-- 當螢幕寬度少於768px時，替換圖片 -->
+                <source
+                  srcset="/hex-week06-vite-bootstrap-hw/assets/content-4-sm-0402cd6c.png "
+                  class="w-100 mb-md-9 mb-6"
+                  media="(max-width: 768px)"
+                />
+                <!-- 預設圖片，通常是桌面版本 -->
+                <img
+                  src="/hex-week06-vite-bootstrap-hw/assets/content-4-d6de1a57.png"
+                  class="w-100 mb-md-9 mb-6"
+                  alt="article image"
+                />
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- 訂閱CTA -->
-    <div class="container">
-      <div class="d-flex flex-column align-items-center fw-bold">
-        <p class="d-md-block d-none mb-4">
-          本篇為會員專屬文章，馬上訂閱瀏覽所有內容！
-        </p>
-
-        <p class="d-block d-md-none text-center mb-3 fw-bold">
-          本篇為會員專屬文章<br />馬上訂閱瀏覽所有內容！
-        </p>
-        <a href="subscription-package.html">
-          <button
-            type="submit"
-            class="btn btn-accent-200 text-white fw-bolder w-100 mb-11 mb-md-14"
-          >
-            我要訂閱 <i class="ms-3 bi bi-arrow-right"></i>
-          </button>
-        </a>
       </div>
     </div>
 
@@ -205,8 +224,8 @@
     <div class="container mb-md-14 mb-11">
       <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
-          <div class="swiper readMoreSwiper">
-            <div class="swiper-wrapper">
+          <div class="swiper readMoreSwiper read-more-swiper">
+            <div class="swiper-wrapper read-more-swiper-wrapper">
               <!-- 延伸閱讀 1 -->
               <div class="swiper-slide mb-md-9">
                 <div class="card border-0 border-bottom rounded-0 pb-6">
